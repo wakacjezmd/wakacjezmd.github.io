@@ -1,0 +1,13 @@
+# Site settings
+title: Wakacje z MD
+email: ap360585@students.mimuw.edu.pl
+baseurl: ""
+url: "http://wakacjezmd.github.io"
+github_username:  wakacjezmd
+
+# Build settings
+markdown: redcarpet
+permalink: pretty
+
+# Includes
+include: ['_solutions']
