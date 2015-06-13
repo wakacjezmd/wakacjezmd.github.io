@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /2014/1/
+permalink: /2014/egzamin/1/
 ---
 
 ###Zadanie 1
@@ -11,7 +11,7 @@ $$\lim_{x \to +\infty} n = +\infty$$
 <div data-collapse>
   <h4 class="collapsible">Rozwiązanie</h4>
   <div>
-    <p>Rozwiązaniem jest \(e^{-x}\)</p>
+    Rozwiązaniem jest \(e^{-x}\)
   </div>
 </div>
 

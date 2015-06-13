@@ -213,6 +213,14 @@ a:visited { color: #205caa; }
   top: 3px;
 }
 
+.site-footer .disclamer {
+  font-size: 13px;
+}
+
+.site-footer li {
+  margin-bottom: 5px;
+}
+
 
 /* Page Content styles */
 /* ----------------------------------------------------------*/
