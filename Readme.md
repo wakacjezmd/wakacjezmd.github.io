@@ -2,6 +2,12 @@
 
 To repozytorium zawiera kod strony [wakacjezmd.github.io](http://wakacjezmd.github.io), na której znajdują się rozwiązania kolokwiów oraz egzaminów z Matematyki Dyskretnej prowadzonej na wydziale [Matematyki, Informatyki i Mechaniki UW](http://www.mimuw.edu.pl).
 
+## Generowanie strony
+
+Do generowania zawartości strony potrzebny jest [jekyll](http://jekyllrb.com).
+Po wprowadzeniu zmian w repozytorium dobrze jest włączyć `jekyll serve` z katalogu
+głównego i przed pushem sprawdzić lokalnie czy wszystko działa.
+
 ## Pliki z rozwiązaniami
 
 W katalogu `_solutions` znajdują się rozwiązania wszystkich egzaminów i kolokwiów podzielone podkatalogami na odpowiednie lata.

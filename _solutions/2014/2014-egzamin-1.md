@@ -3,38 +3,11 @@ layout: page
 permalink: /2014/egzamin/1/
 ---
 
+## 2014 Pierwszy termin
+
 ###Zadanie 1
-To jest treść zadania 1.
-Mogę tutaj dać więcej tesktu i trochę matematyki:
-$$\lim_{x \to +\infty} n = +\infty$$
+Udowodnij tożsamość
 
-<div data-collapse>
-  <h4 class="collapsible">Rozwiązanie</h4>
-  <div>
-    Rozwiązaniem jest \(e^{-x}\)
-  </div>
-</div>
+$$\sum_{k}{ n\brack m}{n\brace m} = {n\choose m}\frac{(n-1)!}{(m-1)!}$$
 
----
-
-###Zadanie 2
-To jest treść zadania 2
-
-<div data-collapse>
-  <h4 class="collapsible">Rozwiązanie</h4>
-  <div>
-    <p>Rozwiązaniem jest \(e^{-x}\)</p>
-  </div>
-</div>
-
----
-
-###Zadanie 3
-To jest treść zadania 3
-
-<div data-collapse>
-  <h4 class="collapsible">Rozwiązanie</h4>
-  <div>
-    <p>Rozwiązaniem jest \(e^{-x}\)</p>
-  </div>
-</div>
+dla n, m > 0
