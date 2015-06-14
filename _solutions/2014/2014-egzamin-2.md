@@ -27,16 +27,19 @@ liczby \\(3n\\) na cztery części rozmiaru co najwyżej \\(n - 1\\).
 
 ###Zadanie 3
 
-Udowodnij, że w dowolnym kolorowaniu grafu \\(G\\) na \\(\chi(G)\\) kolorów istnieje wierzchołek każdego koloru, który ma sąsiadów we wszystkich pozostałych kolorach. 
+Udowodnij, że w dowolnym kolorowaniu grafu \\(G\\) na \\(\chi(G)\\) kolorów istnieje wierzchołek każdego koloru, który ma sąsiadów we wszystkich pozostałych kolorach.
 
 <div data-collapse>
   <h4 class="collapsible">Rozwiązanie</h4>
   <div class="solution">
     <p>
-	Załóżmy, że istnieje kolor, taki że każdy wierzchołek tego koloru posiada sąsiadów, którzy nie wyczerpują wszystkich pozostałych kolorów.
-	Oznacza to, że każdy taki wierzchołek możemy przekolorować na kolor, który nie był wykorzystany wśród sąsiadów. 
-	To z kolei oznacza, że w takim poprawionym kolorowaniu ten kolor nie będzie w ogóle użyty. <br/>
-	Dochodzimy więc do sprzeczhości, ponieważ wyjściowe kolorowanie nie było kolorowaniem na minimalną ilość kolorów.	
+      Zastosujmy kontrapozycje. Chcemy pokazać, że jeżeli istnieje taki kolor, że każdy jego wierzchołek ma sąsiadów, którzy nie wyczerpują wszystkich pozostałych kolorów, to \(G\) nie był kolorowany na \(\chi(G)\) kolorów.
+    </p>
+    <p>
+    	Załóżmy, że istnieje taki kolor \(k\), że każdy wierzchołek tego koloru posiada sąsiadów, którzy nie wyczerpują wszystkich pozostałych kolorów.
+    	Oznacza to, że każdy taki wierzchołek możemy przekolorować na inny kolor, który nie był wykorzystany wśród jego sąsiadów.
+    	To z kolei oznacza, że w nowym kolorowaniu kolor \(k\) nie będzie w ogóle użyty. <br/>
+    	Zatem wyjściowe kolorowanie wcale nie używało minimalnej możliwej liczby kolorów \(\chi(G)\).
     </p>
   </div>
 </div>
