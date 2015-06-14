@@ -33,7 +33,7 @@ $$ \sum\limits\_{k=1}^n b\_r (n,k) x^k = (r-1)! \frac{x^\overline{n}}{(x+1)^\ove
 	    n \sum\limits_{k=1}^{n} b_r (n,k) x^k + \sum\limits_{k=0}^{n} b_r(n,k)x^{k+1} = \\
 	    n \sum\limits_{k=1}^{n} b_r (n,k) x^k + x \sum\limits_{k=1}^{n} b_r(n,k)x^{k} = \\
 	    (n+x) (r-1)! \frac{x^\overline{n}}{(x+1)^\overline{r-1}} = \\
-	    (r-1)! \frac{x^\overline{n+1}}{(x+1)^\overline{r-1}}  c.n.d. $$
+	    (r-1)! \frac{x^\overline{n+1}}{(x+1)^\overline{r-1}} $$
 	
 	Pierwsza równość została otrzymana poprzez zastosowanie obserwacji. Druga poprzez wyrazu zerowego z pierwszej sumy oraz przeindeksowanie drugiej.
 	Trzecia poprzez wyrzucenie zerowego wyrazu z drugiej sumy. Kolejne równości to zastosowanie założenia indukcyjnego i proste rachunki na silniach.
