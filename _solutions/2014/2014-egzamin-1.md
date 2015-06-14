@@ -27,8 +27,9 @@ a) planarny
 <div data-collapse>
   <h4 class="collapsible">Rozwiązanie</h4>
   <div class="solution">
-     Nie, 5 dowolnych liczb pierwszych (np. 2, 3, 5, 7, 11) 
-     tworzy klikę \(K_5\) co z tw.
+     Nie, następujące względnie pierwsze liczby: 4, 9, 25, 36, 49
+     (kwadraty kolejnych liczb pierwszych) 
+     tworzą klikę \(K_5\) co z tw.
      Kuratowskiego oznacza że nie jest planarny.
   </div>
 </div>
@@ -37,10 +38,3 @@ a) planarny
 b) hamiltonowski
 
 c) eulerowski
-
-###Zadanie 4
-Uprość wyrażenie
-$$ \frac{1}{k!}\sum\limits\_{\pi \in S\_k}n^{c(\pi)}, $$
-gdzie \\(c(\pi)\\) oznacza liczbę cykli w zapisie cyklowym permutacji 
-\\(\pi\\). <br>
-WSKAZÓWKA: Interpretacja kombinatoryczna.
