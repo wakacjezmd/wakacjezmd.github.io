@@ -10,4 +10,4 @@ Udowodnij tożsamość
 
 $$\sum_{k}{ n\brack m}{n\brace m} = {n\choose m}\frac{(n-1)!}{(m-1)!}$$
 
-dla n, m > 0
+dla \\(n, m > 0\\)

@@ -7,7 +7,7 @@ permalink: /2013/egzamin/2/
 
 ###Zadanie 1
 
-Udowodnij, że liczba \\(\frac{(kn)!}{k!(n!)^{k}}\\) jest całkowita dla dowolnych naturalnych n i k.
+Udowodnij, że liczba \\(\frac{(kn)!}{k!(n!)^{k}}\\) jest całkowita dla dowolnych naturalnych \\(n\\) i \\(k\\).
 
 <div data-collapse>
   <h4 class="collapsible">Rozwiązanie</h4>
@@ -42,8 +42,8 @@ Udowodnij, że liczba \\(\frac{(kn)!}{k!(n!)^{k}}\\) jest całkowita dla dowolny
 
 ###Zadanie 2
 
-Graf jest *k-zdegenerowany*, jeśli każdy jego podgraf zawiera wierzchołek stopnia
-co najwyżej k (na przykład każdy graf planarny jest 5-zdegenerowany). Udowonij, że jeśli \\(G\\)
+Graf jest *\\(k\\)-zdegenerowany*, jeśli każdy jego podgraf zawiera wierzchołek stopnia
+co najwyżej \\(k\\) (na przykład każdy graf planarny jest 5-zdegenerowany). Udowonij, że jeśli \\(G\\)
 jest spójnym 100-wierzchołkowym grafem 10-zdegenerowanym, to liczba wierzchołków stopnia \\(\geq 30\\) jest mniejsza niż 66.
 
 *WSKAZÓWKA: Co można powiedzieć o średnim stopniu wierzchołka w \\(G\\)?*
