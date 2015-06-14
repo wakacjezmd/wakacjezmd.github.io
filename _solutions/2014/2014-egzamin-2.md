@@ -53,8 +53,8 @@ Uprość wyrażenie \\( \frac{1}{k!} \sum\limits\_{\pi \in S\_k} n^{c(\pi)}\\) g
 	  \sum\limits\_{i=1}^{k} {k \brack i} n^i   $$
 	Zauważmy, że ta suma zlicza nam ilość pokolorowań cykli wszystkich k-permutacji na n kolorów. 
 	Spróbujmy generować takie kolorowania w inny sposób. Wstawiając pierwszy element do permutacji może on być pokolorowany na jeden z \\(n\\) kolorów. 
-	Drugi element może tworzyć nowy cykl i być pokolorowany na \\(n\\) kolorów, bądź stać w cyklu na prawo od elementu pierwszego i mieć taki sam kolor jak on.
-	Łatwo widać że w takim wypadku daje nam to (x+1) możliwości. Uogólniając to rozumowanie, uzyskujemy następującą równość:
+	Drugi element może tworzyć nowy cykl i być pokolorowany na jeden z \\(n\\) kolorów, bądź stać w cyklu na prawo od elementu pierwszego i mieć taki sam kolor jak on.
+	Łatwo widać że w takim wypadku daje nam to \\(x+1\\) możliwości. Uogólniając to rozumowanie, uzyskujemy następującą równość:
 	$$   \sum\limits\_{i=1}^{k} {k \brack i} n^i =  n^\overline{k} $$
 	Daje nam to odpowiedź:
 $$ 	\frac{1}{k!} \sum\limits\_{\pi \in S\_k} n^{c(\pi)} = \frac{n^\overline{k}}{k!} $$
