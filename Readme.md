@@ -28,6 +28,11 @@ Format nazw plików egzaminów powinien spełniać poniższe reguły: `<rok>-egz
 
 We wszystkich plikach można używać LaTeXa. Wzory inline należy umieszczać w nawiasach `\(<wzór>\)`, a wzory mające być wyświetlane w oddzielnych liniach w znacznikach `$$<wzór>$$`.
 
+**Przydatne wzory**
+
+* Liczby Stirlinga I rodzaju `{ n\brack m }`
+* Liczby Stirlinga II rodzaju `{ n\brace m }`
+
 **UWAGA**
 
 Niestety parser markdown inaczej interpretuje tekst umieszczony w tagach HTML (np. rozwiązania), a
