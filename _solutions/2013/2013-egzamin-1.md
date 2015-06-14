@@ -48,8 +48,8 @@ Rozwiąż kongruencję \\(x^{59} \equiv 604 \ (mod\ 2013)\\)
     </p>
     <p>
       Teraz z konstruktywnej wersji chińskiego twierdzenia o resztach, możemy wyliczyć, że
-      $$x \equiv 1 \cdot 671 \cdot 2 + 10 \cdot 33 \cdot 37 + 10 \cdot 183 \cdot 50\ (mod\ 2013)$$
-      $$x \equiv 376\ (mod\ 2013)$$
+      $$x \equiv 1 \cdot 671 \cdot 2 + 10 \cdot 183 \cdot 8 + 10 \cdot 33 \cdot 37\ (mod\ 2013)$$
+      $$x \equiv 10\ (mod\ 2013)$$
     </p>
   </div>
 </div>
