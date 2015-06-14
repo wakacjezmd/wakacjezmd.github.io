@@ -297,18 +297,23 @@ a:visited { color: #205caa; }
   letter-spacing: -1px;
 }
 
+.post-content h4 {
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+
 .post-content h4.collapsible {
   font-size: 16px;
   margin: 20px 0 10px;
 }
 
 .post-content h4.collapsible a {
-  color: #000;
+  color: #222;
 }
 
-.post-content h4 {
-  font-size: 20px;
-  letter-spacing: -1px;
+
+.post-content .solution p:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .post-content blockquote {

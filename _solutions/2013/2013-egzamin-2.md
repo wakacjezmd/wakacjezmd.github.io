@@ -9,6 +9,35 @@ permalink: /2013/egzamin/2/
 
 Udowodnij, że liczba \\(\frac{(kn)!}{k!(n!)^{k}}\\) jest całkowita dla dowolnych naturalnych n i k.
 
+<div data-collapse>
+  <h4 class="collapsible">Rozwiązanie</h4>
+  <div class="solution">
+    <p>
+      Oznaczmy \( p(n, k) \) jako liczbę podziałów zbioru n elementowego na bloki
+      zawierające dokładnie k elementów. W szczególności \( \forall_{n,k}\ p(n, k) \in \mathbb{Z} \).
+    </p>
+    <p>
+      Pokażemy przez IK, że \((kn)! = p(kn, k)k!(n!)^k\).
+    </p>
+    <p>
+      <b>LEWA:</b> \((kn)!\) to liczba permutacji pól prostokąta o wymiarach \( k \times n \).
+    </p>
+    <p>
+      <b>PRAWA:</b> Dowolną permutacje pól takiego prostokąta możemy również uzyskać najpierw
+      wybierając z \(kn\) pól \(k\)-elementowe podzbiory (wiersze), następnie ustalić ich kolejność
+      na \(k!\) sposobów, a na koniec ustawić każdy z wierszy na \(n!\) sposobów, więc do iloczynu
+      dojdzie czynnik \((n!)^k\).
+    </p>
+    <p>
+      Skoro pokazaliśmy, że powyższa równość jest prawdziwa, to możemy podzielić ją stronami
+      przez \(k!(n!)^k\) i wtedy otrzymamy:
+      $$\frac{(kn)!}{k!(n!)^k} = p(kn, k)$$
+      Ponieważ prawa strona na pewno jest liczbą całkowitą, to lewa także musi nią być.
+    </p>
+  </div>
+</div>
+
+
 ---
 
 ###Zadanie 2
@@ -18,6 +47,33 @@ co najwyżej k (na przykład każdy graf planarny jest 5-zdegenerowany). Udowoni
 jest spójnym 100-wierzchołkowym grafem 10-zdegenerowanym, to liczba wierzchołków stopnia \\(\geq 30\\) jest mniejsza niż 66.
 
 *WSKAZÓWKA: Co można powiedzieć o średnim stopniu wierzchołka w \\(G\\)?*
+
+<div data-collapse>
+  <h4 class="collapsible">Rozwiązanie</h4>
+  <div class="solution">
+    <p>
+      Załóżmy, że mamy graf \(G\) będący grafem \(k\)-zdegenerowanym. Oznacza to, że ma on wierzchołek stopnia co najwyżej
+      \(k\). Możemy go z niego usunąć, a wtedy suma stopni wszystkich pozostałych wierzchołków spadnie o co najwyżej \(2k\) (k od usuwanego wierzchołka i k od jego sąsiadów).
+      W ten sposób otrzymujemy graf \(H \subset G\), ale z definicji \(k\)-zdegenerowania wynika, że on także posiada taki wierzchołek.
+      Procedurę tę możemy kontynuować schodząc aż do grafu pustego.
+    </p>
+    <p>
+      Ponieważ przy każdej iteracji suma stopni wierzchołków
+      malała co najwyzej o \(k\), to możemy powiedzieć, że dla dowolnego grafu \(k\)-zdegenerowanego zachodzi: $$\sum_{i=1}^{\left|V(G)\right|} deg(v_i) \leq 2k\left|V(G)\right|$$
+      Przekształcając te nierówność otrzymujemy:
+      $$\frac{\sum_{i=1}^{\left|V(G)\right|} deg(v_i)}{\left|V(G)\right|} \leq 2k$$
+      czyli, w grafie \(k\) zdegenerowanym średni stopień wierzchołka nie może przekraczać \(k\).
+    </p>
+    <p>
+      Załóżmy teraz, że w grafie \(G\) liczba wierzchołków stopnia \( \geq 30\) jest większa niż 66. Mamy:
+      $$\frac{\sum_{i=1}^{\left|V(G)\right|} deg(v_i)}{\left|V(G)\right|} \geq \frac{66*30+34*1}{100} = 20.14 \geq 20 = 2k$$
+      (spójność grafu wymusza to, że pozostałe 34 wierzchołki musza mieć przynajmniej jedną krawędź), czyli graf \(G\) nie może być wtedy \(k\)-zdegenerowany.
+    </p>
+    <p>
+      <b>Sprzeczność.</b>
+    </p>
+  </div>
+</div>
 
 ---
 

@@ -26,9 +26,17 @@ Format nazw plików egzaminów powinien spełniać poniższe reguły: `<rok>-egz
 
 #### LaTeX
 
-We wszystkich plikach można używać LaTeXa. Wzory inline należy umieszczać w nawiasach `\\(<wzór>\\)`, a wzory mające być wyświetlane w oddzielnych liniach w znacznikach `$$<wzór>$$`.
-Niestety parser markdown interpretuje `_` jako kursywę, więc we wszystkich wzorach trzeba
+We wszystkich plikach można używać LaTeXa. Wzory inline należy umieszczać w nawiasach `\(<wzór>\)`, a wzory mające być wyświetlane w oddzielnych liniach w znacznikach `$$<wzór>$$`.
+
+**UWAGA**
+
+Niestety parser markdown inaczej interpretuje tekst umieszczony w tagach HTML (np. rozwiązania), a
+inaczej ten umieszczony normalnie w pliku.
+
+* W treści zadania `_` jest interpretowany jako kursywa, więc we wszystkich wzorach trzeba
 wpisywać `\_`.
+* W treści zadania `\` jest interpretowany jako escapowanie kolejnego znaku, więc jeżeli chcemy dodać blok
+LaTeXa inline to należy napisać `\\(<wzór>\\)`.
 
 #### Nagłówek
 Plik egzaminu bądź kolokwium powinien posiadać odpowiedni nagłówek:
@@ -52,8 +60,16 @@ Markdown każdego zadania powinien mieć następującą strukturę:
 
 <div data-collapse>
   <h4 class="collapsible">Rozwiązanie</h4>
-  <div>
-    <ROZWIĄZANIE>
+  <div class="solution">
+    <p>
+      <CZĘŚĆ ROZWIĄZANIA>
+    </p>
+    <p>
+      <CZĘŚĆ ROZWIĄZANIA>
+    </p>
+    <p>
+      <CZĘŚĆ ROZWIĄZANIA>
+    </p>
   </div>
 </div>
 
