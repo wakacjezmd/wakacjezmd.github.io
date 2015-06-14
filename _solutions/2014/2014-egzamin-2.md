@@ -24,3 +24,19 @@ liczby \\(3n\\) na cztery części rozmiaru co najwyżej \\(n - 1\\).
     </p>
   </div>
 </div>
+
+###Zadanie 3
+
+Udowodnij, że w dowolnym kolorowaniu grafu \\(G\\) na \\(\chi(G)\\) kolorów istnieje wierzchołek każdego koloru, który ma sąsiadów we wszystkich pozostałych kolorach. 
+
+<div data-collapse>
+  <h4 class="collapsible">Rozwiązanie</h4>
+  <div class="solution">
+    <p>
+	Załóżmy, że istnieje kolor, taki że każdy wierzchołek tego koloru posiada sąsiadów, którzy nie wyczerpują wszystkich pozostałych kolorów.
+	Oznacza to, że każdy taki wierzchołek możemy przekolorować na kolor, który nie był wykorzystany wśród sąsiadów. 
+	To z kolei oznacza, że w takim poprawionym kolorowaniu ten kolor nie będzie w ogóle użyty. <br/>
+	Dochodzimy więc do sprzeczhości, ponieważ wyjściowe kolorowanie nie było kolorowaniem na minimalną ilość kolorów.	
+    </p>
+  </div>
+</div>
