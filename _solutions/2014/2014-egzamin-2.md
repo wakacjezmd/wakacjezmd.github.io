@@ -19,7 +19,8 @@ liczby \\(3n\\) na cztery części rozmiaru co najwyżej \\(n - 1\\).
       $$\sum_{i=1}^4 a_i = n $$
       Teraz rozważmy podział \(\left\{n - a_1, n - a_2, n - a_3, n - a_4\right\}\).
       $$(n - a_1) + (n - a_2) + (n - a_3) + (n - a_4) = 4n - \sum_{i=1}^4 a_i = 3n$$
-      Dodatkowo \(\forall_{i}\ 1 \leq a_i \leq n - 1\), więc \(\forall_{i}\ 1 \leq n - a_i \leq n - 1\).
+      Dodatkowo \(\forall_{i}\ 1 \leq a_i \leq n - 1\), więc \(\forall_{i}\ 1 \leq n - a_i \leq n - 1\),
+      więc wszystkie warunki są spełnione.
     </p>
   </div>
 </div>
