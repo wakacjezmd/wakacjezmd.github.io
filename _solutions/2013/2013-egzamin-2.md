@@ -66,7 +66,7 @@ jest spójnym 100-wierzchołkowym grafem 10-zdegenerowanym, to liczba wierzchoł
     </p>
     <p>
       Załóżmy teraz, że w grafie \(G\) liczba wierzchołków stopnia \( \geq 30\) jest większa niż 66. Mamy:
-      $$\frac{\sum_{i=1}^{\left|V(G)\right|} deg(v_i)}{\left|V(G)\right|} \geq \frac{66*30+34*1}{100} = 20.14 \geq 20 = 2k$$
+      $$\frac{\sum_{i=1}^{\left|V(G)\right|} deg(v_i)}{\left|V(G)\right|} \geq \frac{66\cdot 30+34\cdot 1}{100} = 20.14 \geq 20 = 2k$$
       (spójność grafu wymusza to, że pozostałe 34 wierzchołki musza mieć przynajmniej jedną krawędź), czyli graf \(G\) nie może być wtedy \(k\)-zdegenerowany.
     </p>
     <p>
@@ -84,3 +84,41 @@ który występuje dokładnie w potędze 2013. Tak więc liczba \\(2^{2013}3^{5}\
 że istnieje ciąg arytmetyczny o 2013 elementach i różnicy ciągów równej 2013, którego wszystkie elementy są tegoroczne.
 
 *WSKAZÓWKA: Chińskie twierdzenie o resztach.*
+
+<div data-collapse>
+  <h4 class="collapsible">Rozwiązanie</h4>
+  <div class="solution">
+    <p>
+      Niech \(p_n\) oznacza \(n\)-tą liczbę pierwszą.
+    </p>
+    <p>
+      Szukamy liczby a będącej początkiem takiego ciągu.
+      Możemy ułożyć układ 2013 równań postaci:
+      $$(i)\ \ \ \ a \equiv -2013\cdot i\ (mod\ p_i)$$
+      $$\left\{
+          \begin{array}{lr}
+            a \equiv 0\ (mod \ p_{1}^{2013})\\
+            \ldots\\
+            a + 2013\cdot i \equiv 0\ (mod \ p_{i}^{2013})\\
+            \ldots\\
+            a + 2013\cdot 2013\equiv 0\ (mod \ p_{2013}^{2013})
+          \end{array}
+        \right.$$
+      Co można przepisać jako:
+      $$\left\{
+          \begin{array}{lr}
+            a \equiv 0\ (mod \ p_{1}^{2013})\\
+            \ldots\\
+            a \equiv -2013\cdot i \ (mod \ p_{i}^{2013})\\
+            \ldots\\
+            a \equiv -2013\cdot 2013 \ (mod \ p_{2013}^{2013})\\
+          \end{array}
+        \right.$$
+      Ponieważ \(\forall_{i,j}\ i \neq j \Rightarrow p_i \perp p_j\), to również
+      \(\forall_{i,j}\ i \neq j \Rightarrow p_i^{2013} \perp p_j^{2013}\), a więc dzięki
+      chińskiemu twierdzeniu o resztach możemy powiedzieć, że istnieje dokładnie jedna liczba
+      \(a\) taka, że \(1 \leq a \leq p_1^{2013} \cdot \ldots \cdot p_{2013}^{2013}\) spełniająca
+      wszystkie powyższe kongruencje.
+    </p>
+  </div>
+</div>
