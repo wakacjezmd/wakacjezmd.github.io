@@ -40,3 +40,24 @@ Udowodnij, że w dowolnym kolorowaniu grafu \\(G\\) na \\(\chi(G)\\) kolorów is
     </p>
   </div>
 </div>
+
+###Zadanie 4
+
+Uprość wyrażenie \\( \frac{1}{k!} \sum\limits\_{\pi \in S\_k} n^{c(\pi)}\\) gdzie \\(c(\pi)\\) to ilość cykli w permutacji \\(\pi\\).
+<div data-collapse>
+  <h4 class="collapsible">Rozwiązanie</h4>
+  <div class="solution">
+    <p>
+	Grupując elementy podanej sumy na grupki permutacji o takich samych ilościach cykli uzyskujemy, że
+	$$ \sum\limits\_{\pi \in S\_k} n^{c(\pi)}=\\
+	  \sum\limits\_{i=1}^{k} {k \brack i} n^i   $$
+	Zauważmy, że ta suma zlicza nam ilość pokolorowań cykli wszystkich k-permutacji na n kolorów. 
+	Spróbujmy generować takie kolorowania w inny sposób. Wstawiając pierwszy element do permutacji może on być pokolorowany na jeden z \\(n\\) kolorów. 
+	Drugi element może tworzyć nowy cykl i być pokolorowany na \\(n\\) kolorów, bądź stać w cyklu na prawo od elementu pierwszego i mieć taki sam kolor jak on.
+	Łatwo widać że w takim wypadku daje nam to (x+1) możliwości. Uogólniając to rozumowanie, uzyskujemy następującą równość:
+	$$   \sum\limits\_{i=1}^{k} {k \brack i} n^i =  n^\overline{k} $$
+	Daje nam to odpowiedź:
+$$ 	\frac{1}{k!} \sum\limits\_{\pi \in S\_k} n^{c(\pi)} = \frac{n^\overline{k}}{k!} $$
+	 </p>
+  </div>
+</div>
