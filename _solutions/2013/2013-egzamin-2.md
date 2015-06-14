@@ -15,7 +15,7 @@ Udowodnij, że liczba \\(\frac{(kn)!}{k!(n!)^{k}}\\) jest całkowita dla dowolny
 
 Graf jest *k-zdegenerowany*, jeśli każdy jego podgraf zawiera wierzchołek stopnia
 co najwyżej k (na przykład każdy graf planarny jest 5-zdegenerowany). Udowonij, że jeśli \\(G\\)
-jest spólnym 100-wierzchołkowym grafem 10-zdegenerowanym, to liczba wierzchołków stopnia \\(\geq 30\\) jest mniejsza niż 66.
+jest spójnym 100-wierzchołkowym grafem 10-zdegenerowanym, to liczba wierzchołków stopnia \\(\geq 30\\) jest mniejsza niż 66.
 
 *WSKAZÓWKA: Co można powiedzieć o średnim stopniu wierzchołka w \\(G\\)?*
 

@@ -4,9 +4,17 @@ To repozytorium zawiera kod strony [wakacjezmd.github.io](http://wakacjezmd.gith
 
 ## Generowanie strony
 
-Do generowania zawartości strony potrzebny jest [jekyll](http://jekyllrb.com).
+Do generowania zawartości strony potrzebny jest [jekyll](http://jekyllrb.com) i [redcarpet](https://github.com/vmg/redcarpet). Żeby je zainstalować trzeba ściągnąć ruby i wpisać:
+```
+(sudo) gem install jekyll
+(sudo) gem install redcarpet
+```
 Po wprowadzeniu zmian w repozytorium dobrze jest włączyć `jekyll serve` z katalogu
 głównego i przed pushem sprawdzić lokalnie czy wszystko działa.
+
+## Błędy
+
+Wszystkie błędy można zgłaszać na stronie [issues](https://github.com/wakacjezmd/wakacjezmd.github.io/issues).
 
 ## Pliki z rozwiązaniami
 
@@ -18,7 +26,9 @@ Format nazw plików egzaminów powinien spełniać poniższe reguły: `<rok>-egz
 
 #### LaTeX
 
-We wszystkich plikach można używać LaTeXa. Wzory inline należy umieszczać w nawiasach `\(<wzór>\)`, a wzory mające być wyświetlane w oddzielnych liniach w znacznikach `$$<wzór>$$`.
+We wszystkich plikach można używać LaTeXa. Wzory inline należy umieszczać w nawiasach `\\(<wzór>\\)`, a wzory mające być wyświetlane w oddzielnych liniach w znacznikach `$$<wzór>$$`.
+Niestety parser markdown interpretuje `_` jako kursywę, więc we wszystkich wzorach trzeba
+wpisywać `\_`.
 
 #### Nagłówek
 Plik egzaminu bądź kolokwium powinien posiadać odpowiedni nagłówek:
