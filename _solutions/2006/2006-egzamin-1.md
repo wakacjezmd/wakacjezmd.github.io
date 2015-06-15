@@ -21,3 +21,26 @@ występuje dokłądnie \\( n2^{n-5} \\) razy.
 
 Udowodnij, że krawędzie dowolnego grafu nieskierowanego można skierować w taki sposób,
 że dla każdego wierzchołka \\(v\\) będzie spełniony warunek \\( \left| deg\_{in}(v) - deg\_{out}(v) \right|  \leq 1 \\).
+
+<div data-collapse>
+  <h4 class="collapsible">Rozwiązanie</h4>
+  <div class="solution">
+    <p>
+      Zauważmy, że jeżeli graf \(G\) zawiera podgraf \(C\) będący cyklem, to krawędzie zawarte w \(C\) możemy
+      zorientować tak, żeby zachodziło \(\forall{v \in V(C)}\ \left| deg_{in}(v) - deg_{out}(v) \right| = 0\),
+      bo do dowolnego wierzchołka \(v\) wchodzą dokładnie dwie krawędzie.
+    </p>
+    <p>
+      Możemy więc założyć, że w \(G\) nie ma już żadnych cykli, czyli że jest drzewem.
+      Przeprowadźmy indukcje po liczbie wierzchołków.<br/>
+      1. Jeżeli drzewo ma jeden wierzchołek, to spełnia on warunek.<br/>
+      2. Załóżmy, że warunek jest prawdziwy dla wszystkich drzew \(n\)-wierzchołkowych.
+         Weźmy dowolne drzewo o \(n+1\) wierzchołkach i wybierzmy jeden z jego liści.
+         Możemy go usunąć i z założenia indukcyjnego skierować pozostałe krawędzie tak,
+         żeby spełniały powyższy warunek. Następnie dodajemy go, a kierunek jego krawędzi zawsze możemy
+         ustalić tak, żeby albo wyrównać stopnie wchodzące i wychodzące jego sąsiada (jeżeli ich różnica była inna niż 0),
+         albo, jeżeli były równe, to po skierowaniu tej krawędzi ich różnica będzie wynosiła co najwyżej 1. Zatem
+         takie drzewo też spełnia warunek zadania.
+    </p>
+  </div>
+</div>
