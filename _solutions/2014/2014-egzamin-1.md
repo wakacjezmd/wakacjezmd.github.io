@@ -43,12 +43,12 @@ dla \\(n, m > 0\\)
 </div>
 ###Zadanie 2
 Znajdź liczbę 6-literowych słów złożonych z liter A, B, C, D, E w
-któryc: każda z liter A, B występuje _co najwyżej raz_, a każda z liter 
+których: każda z liter A, B występuje _co najwyżej raz_, a każda z liter
 C, D - _co najmniej raz_.
 
 ###Zadanie 3
 Wierzchołki grafu \\(G\_n\\) to wszystkie liczby złożone ze zbioru
-{1,...,n} a para {i,j} jest krawędzią wtedy i tylko wtedy gdy 
+{1,...,n} a para {i,j} jest krawędzią wtedy i tylko wtedy gdy
 \\(i\perp j\\). Rozstrzygnij czy graf \\(G\_{1000}\\) jest:
 
 a) planarny
@@ -57,7 +57,7 @@ a) planarny
   <h4 class="collapsible">Rozwiązanie</h4>
   <div class="solution">
      Nie, następujące względnie pierwsze liczby: 4, 9, 25, 36, 49
-     (kwadraty kolejnych liczb pierwszych) 
+     (kwadraty kolejnych liczb pierwszych)
      tworzą klikę \(K_5\) co z tw.
      Kuratowskiego oznacza że nie jest planarny.
 
@@ -70,17 +70,17 @@ b) hamiltonowski
   <h4 class="collapsible">Rozwiązanie</h4>
   <div class="solution">
      <p>Skorzystam z twierdzenia o tym że jeżeli graf ma cykl hamiltona to
-     usunięcie k wierzchołków spowoduje jego rozpadnięcie się na co 
+     usunięcie k wierzchołków spowoduje jego rozpadnięcie się na co
      najwyżej k składowych. </p>
 
-     <p>Mamy dokładnie 499 wierzchołków z liczb parzystych i zdecydowanie
-     mniej wierzchołków nieparzystych (bo wiele spośród nich to liczby
-     pierwsze). Po usunięciu wierzchołków nieparzystych których jest 
+     <p>Mamy dokładnie 499 wierzchołków etykietowanych liczbami parzystymi i
+     zdecydowanie mniej wierzchołków nieparzystych (bo wiele spośród nich to
+     liczby pierwsze). Po usunięciu wierzchołków nieparzystych których jest
      mniej niż 499 w grafie zostaje 499 wierzchołków parzystych które są
      izolowane gdyż w ich rozkładzie na czynniki pierwsze jest 2.</p>
 
-     <p> Zatem nasz graf rozpadł się na 499 składowych i z przytoczonego
-     twierdzenia nie może być hamiltonowski. </p>    
+     <p> Zatem nasz graf rozpadł się na 499 składowych i na mocy przytoczonego
+     twierdzenia nie może być hamiltonowski. </p>
   </div>
 </div>
 
