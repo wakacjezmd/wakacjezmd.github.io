@@ -66,9 +66,26 @@ a) planarny
 
 b) hamiltonowski
 
+<div data-collapse>
+  <h4 class="collapsible">Rozwiązanie</h4>
+  <div class="solution">
+     <p>Skorzystam z twierdzenia o tym że jeżeli graf ma cykl hamiltona to
+     usunięcie k wierzchołków spowoduje jego rozpadnięcie się na co 
+     najwyżej k składowych. </p>
+
+     <p>Mamy dokładnie 499 wierzchołków z liczb parzystych i zdecydowanie
+     mniej wierzchołków nieparzystych (bo wiele spośród nich to liczby
+     pierwsze). Po usunięciu wierzchołków nieparzystych których jest 
+     mniej niż 499 w grafie zostaje 499 wierzchołków parzystych które są
+     izolowane gdyż w ich rozkładzie na czynniki pierwsze jest 2.</p>
+
+     <p> Zatem nasz graf rozpadł się na 499 składowych i z przytoczonego
+     twierdzenia nie może być hamiltonowski. </p>    
+  </div>
+</div>
+
 c) eulerowski
 
-=======
 ###Zadanie 4
 
 Uprość wyrażenie \\( \frac{1}{k!} \sum\limits\_{\pi \in S\_k} n^{c(\pi)}\\) gdzie \\(c(\pi)\\) to ilość cykli w permutacji \\(\pi\\).
