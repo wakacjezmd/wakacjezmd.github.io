@@ -86,6 +86,18 @@ b) hamiltonowski
 
 c) eulerowski
 
+<div data-collapse>
+  <h4 class="collapsible">Rozwiązanie</h4>
+  <div class="solution">
+     <p>Zbadajmy sąsiadów wierzchołka \(2*223\) (\(223\) to liczba pierwsza).
+        Są to wszystkie nieparzyste liczby złożone, oprócz \(3*223\).
+        Rozważmy teraz sąsiadów wierzchołka \(4\). Są to wszystkie nieparzyste
+        liczby złożone. W takim razie stopnie wierzchołków \(4\) i \(2*223\)
+        różnią się o \(1\), czyli jeden z nich musi być parzysty. W takim
+        razie graf nie jest eulerowski.</p>
+  </div>
+</div>
+
 ###Zadanie 4
 
 Uprość wyrażenie \\( \frac{1}{k!} \sum\limits\_{\pi \in S\_k} n^{c(\pi)}\\) gdzie \\(c(\pi)\\) to ilość cykli w permutacji \\(\pi\\).
