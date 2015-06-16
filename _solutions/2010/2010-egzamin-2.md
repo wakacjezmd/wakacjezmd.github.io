@@ -25,7 +25,7 @@ i nieparzystej liczbie krawędzi.
 	Niech zdarzeniem \(A_e\) będzie to, że końce krawędzi \(e\) mają jednakowy kolor.
 	Zastanówmy się co to jest \(S_j\). Jest to ilość kolorowań posiadających dokładnie \(j\) własności.
 	To znaczy, że \(j\) krawędzie ma końce tego samego koloru.
-	Ilość takich kolorowań jest rónwa \( \sum_{T \subseteq G \wedge |T|=2} x^c(V(G), T) \),
+	Ilość takich kolorowań jest równa \( \sum_{T \subseteq G \wedge |T|=2} x^{c(V(G), T)} \),
 	ponieważ wszystkie wierzchołki wewnątrz SS muszą mieć ten sam kolor, a każdą SS możemy kolorować niezależnie
 	na jeden z x kolorów.
 
