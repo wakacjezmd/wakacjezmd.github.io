@@ -46,6 +46,28 @@ Znajdź liczbę 6-literowych słów złożonych z liter A, B, C, D, E w
 których: każda z liter A, B występuje _co najwyżej raz_, a każda z liter
 C, D - _co najmniej raz_.
 
+<div data-collapse>
+  <h4 class="collapsible">Rozwiązanie</h4>
+  <div class="solution">
+     <p>Użyjemy wykładniczych funkcji tworzących. Na początku policzymy WFT dla
+     słów złożonych tylko jednej litery a potem je spleciemy i odczytamy tak otrzymany 
+     wynik.</p>
+     <p>Dla litery A istnieje dokładnie jedno słowo długości zero zawierające co
+     najwyżej raz literę A, podobnie dla słowa długości 1. Słowa o długości większej
+     niż 1 i składające się wyłącznie z liter A nie istnieją. Zapiszmy enumerator:
+     \(\sum^{\infty}_{n=0}([n=0]+[n=1])\frac{z^n}{n!} = z + 1\). Taki sam enumerator
+     wyjdzie dla B.</p>
+     <p>W przypadku gdy rozpatrujemy słowa długości \(n\) złożone tylko z litery C
+     to będzie istniało tylko jedno słowo o ile \(n \ne 0\). Enumerator wygląda tak:
+     \(\sum^{\infty}_{n=0}[n\ne 0]\frac{z^n}{n!} = \sum^{\infty}_{n=0}\frac{z^n}{n!} - 1 = e^z - 1\). To samo dla litery D.</p>
+     <p>Na literę E nie nakładamy żadnych ograniczeń zatem enumeratorem jest 
+     \(\sum^{\infty}_{n=0}\frac{z^n}{n!} = e^z\).</p>
+     <p>Teraz należy to wszystko ze sobą spleść: \((z+1)^2(e^z-1)^2e^z\), wymnożyć
+     i otrzymany enumerator zamienić w szereg a następnie odczytać współczynnik
+     przy \(z^6\) który będzie wynikiem.</p>
+  </div>
+</div>
+
 ###Zadanie 3
 Wierzchołki grafu \\(G\_n\\) to wszystkie liczby złożone ze zbioru
 {1,...,n} a para {i,j} jest krawędzią wtedy i tylko wtedy gdy
