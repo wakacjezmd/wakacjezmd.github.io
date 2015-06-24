@@ -62,9 +62,25 @@ C, D - _co najmniej raz_.
      \(\sum^{\infty}_{n=0}[n\ne 0]\frac{z^n}{n!} = \sum^{\infty}_{n=0}\frac{z^n}{n!} - 1 = e^z - 1\). To samo dla litery D.</p>
      <p>Na literę E nie nakładamy żadnych ograniczeń zatem enumeratorem jest 
      \(\sum^{\infty}_{n=0}\frac{z^n}{n!} = e^z\).</p>
-     <p>Teraz należy to wszystko ze sobą spleść: \((z+1)^2(e^z-1)^2e^z\), wymnożyć
-     i otrzymany enumerator zamienić w szereg a następnie odczytać współczynnik
-     przy \(z^6\) który będzie wynikiem.</p>
+     <p>Teraz należy to wszystko ze sobą spleść: 
+     \((z+1)^2(e^z-1)^2e^z = (z^2+2z+1)(e^{3z}-2e^{2z}+e^z)\). Po wymnożeniu
+     otrzymamy sumę następujących enumeratorów (strzałką oznaczyłem wynik wyciągnięty
+     z enumeratora tj. wartość przy \(\frac{z^6}{6!}\) w otrzymanym szeregu):<br>
+     \(e^z = \sum^{\infty}_{n=0}\frac{z^n}{n!} \leadsto 1\) <br>
+     \(-2\cdot e^{2z} = -2 \cdot \sum^{\infty}_{n=0}\frac{(2z)^n}{n!} = 
+     \sum^{\infty}_{n=0}(-2 \cdot 2^n \frac{z^n}{n!})  \leadsto -2\cdot 2^6\) <br>
+     \(e^{3z} \leadsto 3^6\) <br>
+     \(2z\cdot e^z = 2\cdot \sum^{\infty}_{n=0}z\cdot \frac{z^n}{n!} = 
+     2\cdot \sum^{\infty}_{n=0}\frac{n+1}{n+1}\cdot \frac{z^{n+1}}{n!} = 
+     2\cdot \sum^{\infty}_{n=0}(n+1)\cdot \frac{z^{n+1}}{(n+1)!}\leadsto 2\cdot 6\)<br>
+     \(-4z\cdot e^{2z} \leadsto -4\cdot 2^5\cdot 6\) <br>
+     \(2z\cdot e^{3z} \leadsto 2\cdot 3^5\cdot 6\) <br>
+     \(z^2\cdot e^z \leadsto 6\cdot 5\) <br>
+     \(-4\cdot z^2\cdot e^{2z} \leadsto -4\cdot 2^4\cdot 6\cdot 5 \) <br>
+     \(z^2\cdot e^{3z} \leadsto 3^4\cdot 6\cdot 5\) <br>
+     Ufff, no to teraz z górki, wystarczy wszystko do siebie dodać. Wychodzi 
+     \(602 + 2160 + 540 = 3302\).
+     </p>
   </div>
 </div>
 
