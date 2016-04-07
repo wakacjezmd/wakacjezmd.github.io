@@ -34,16 +34,24 @@ takie, że \\(f(1) \gt f(i)\\) dla \\(i \gt 1\\).
   </div>
 </div>
 
+---
+
 ###Zadanie 2
 Niech \\(a\_n(k)\\) oznacza liczbę n-permutacji z powtórzeniami ze zbioru
 \\(\\left\\{1,...,k\\right\\}\\), w których k występuje nieparzystą liczbę razy.
 Znajdź zwarty wzór na \\(a\_n(k)\\) dla \\(k \gt 1\\).
 
+---
+
 ###Zadanie 3
 Znajdź wszystkie rozwiązania kongruencji \\(x^2 - 3x - 5 \equiv 0\ (mod\ 343)\\).
+
+---
 
 ###Zadanie 4
 Znajdź liczbę istotnie różnych turniejów 5-wierzchołkowych, gdzie turnieje
 \\(T\\) i \\(T'\\) utożsamiamy, jeśli \\(T'\\) jest izomorficzny z
 \\(T\\) lub z turniejem otrzymanym z \\(T\\) przez odwrócenie kierunków
 wszystkich strzałek.
+
+---
