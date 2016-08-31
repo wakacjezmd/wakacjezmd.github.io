@@ -85,7 +85,7 @@ C, D - _co najmniej raz_.
 
 ###Zadanie 3
 Wierzchołki grafu \\(G\_n\\) to wszystkie liczby złożone ze zbioru
-{1,...,n} a para {i,j} jest krawędzią wtedy i tylko wtedy gdy
+\\({1,\dots,n}\)) a para \\({i,j}\\) jest krawędzią wtedy i tylko wtedy gdy
 \\(i\perp j\\). Rozstrzygnij czy graf \\(G\_{1000}\\) jest:
 
 a) planarny
