@@ -41,4 +41,73 @@ Udowodnij, że \\(\chi(G) < 9\\).
 
 ###Zadanie 4
 
+Oblicz \\((1\cdot 3\cdot 5\dots 97)^2 \mod{101}\\).
+
+<div data-collapse>
+  <h4 class="collapsible">Rozwiązanie</h4>
+  <div class="solution">
+  <p>
+    Zauważmy, że
+    $$
+    \begin{align*}
+      1 &\equiv -100 &&\pmod {101} \\
+      3 &\equiv -98 &&\pmod {101} \\
+      5 &\equiv -96 &&\pmod {101}
+    \end{align*}
+    $$
+    Stąd
+    $$
+    x \equiv (1 \cdot 3 \cdot 5 \dots 97)((-100)\cdot(-98)\dots(-4)) \pmod{101}
+    $$
+  </p>
+  <p>
+    Z twierdzenia Wilsona wiemy, że \(100! \equiv -1 \pmod{101}\). Zatem
+    $$
+    \begin{align*}
+      &4x \equiv
+      2 \cdot 2\ (1 \cdot 3 \cdot 5 \dots 97)((-100)\cdot(-98)\dots(-4))
+      \pmod{101} \\
+
+      &4x \equiv
+      2 \cdot (-99)\ (1 \cdot 3 \cdot 5 \dots 97)((-100)\cdot(-98)\dots(-4))
+      \pmod{101} \\
+
+      &\begin{cases}
+        4x &\equiv 100! &&\pmod{101} \\
+        100! &\equiv -1 &&\pmod{101}
+      \end{cases} \\
+
+      &4x \equiv -1 \pmod{101} \\
+    \end{align*}
+    $$
+    Stąd \(x = 25\).
+  </p>
+  <p>
+    Wynik można sprawdzić poniższymi metodami:
+    <ul>
+      <li>
+        Mathematica:
+        <pre><code>
+          Mod[Power[Product[i, {i, 3, 97, 2}], 2], 101]
+        </code></pre>
+      </li>
+      <li>
+        WolframAlpha:
+        <pre><code>
+          (product 2*n+1, 1 to 48)^2 mod 101
+        </code></pre>
+      </li>
+    </ul>
+  </p>
+  <p>
+    Do badania kongruencji w Matematice przydaje się <code>Reduce</code>:
+
+    <pre><code>
+      Reduce[4x == -99*2*100!, Modulus -> 101]
+    </code></pre>
+  </p>
+  </div>
+</div>
+
+
 ---
