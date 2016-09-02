@@ -59,7 +59,9 @@ Uprość sumę \\(\sum^n\_{k-1}\left\lfloor \frac{n}{k} \right\rfloor \phi(k)\\)
   <h4 class="collapsible">Rozwiązanie</h4>
   <div class="solution">
     <p>
-      http://math.stackexchange.com/questions/1155433/euler-phi-function-and-floor-function
+      <a href="http://math.stackexchange.com/questions/1155433/euler-phi-function-and-floor-function">
+        http://math.stackexchange.com/questions/1155433/euler-phi-function-and-floor-function
+      </a>
     </p>
   </div>
 </div>
