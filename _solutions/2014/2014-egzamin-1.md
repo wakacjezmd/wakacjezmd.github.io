@@ -8,7 +8,7 @@ permalink: /2014/egzamin/1/
 ###Zadanie 1
 Udowodnij tożsamość
 
-$$\sum_{k}{ n\brack k}{k\brace m} = {n\choose m}\frac{(n-1)!}{(m-1)!}$$
+$$\sum\_{k}{ n\brack k}{k\brace m} = {n\choose m}\frac{(n-1)!}{(m-1)!}$$
 
 dla \\(n, m > 0\\)
 
