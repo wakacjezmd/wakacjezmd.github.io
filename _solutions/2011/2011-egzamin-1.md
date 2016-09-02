@@ -63,7 +63,7 @@ Kolorujemy wierzchołki czworościanu foremnego z użyciem 3 kolorów, a krawęd
     </p>
     <p>
         Pozostało skorzystać z lematu Burnside'a, co da nam liczbę orbit. Jego postać dla naszego problemu to $$\frac{1}{12}
-        (3^4\cdot 2^6 + 6 \cdot 3^2 \cdot 2^2 + 3 \cdot 3^2\cdot 2^4) = 492$$
+        (3^4\cdot 2^6 + 8 \cdot 3^2 \cdot 2^2 + 3 \cdot 3^2\cdot 2^4) = 492$$
     </p>
   </div>
 </div>
