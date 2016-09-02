@@ -8,7 +8,7 @@ permalink: /2014/egzamin/1/
 ###Zadanie 1
 Udowodnij tożsamość
 
-$$\sum_{k}{ n\brack k}{k\brace m} = {n\choose m}\frac{(n-1)!}{(m-1)!}$$
+$$\sum\_{k}{ n\brack k}{k\brace m} = {n\choose m}\frac{(n-1)!}{(m-1)!}$$
 
 dla \\(n, m > 0\\)
 
@@ -49,43 +49,63 @@ C, D - _co najmniej raz_.
 <div data-collapse>
   <h4 class="collapsible">Rozwiązanie</h4>
   <div class="solution">
-     <p>Użyjemy wykładniczych funkcji tworzących. Na początku policzymy WFT dla
-     słów złożonych tylko jednej litery, a potem je spleciemy.</p>
-     <p>Dla litery A istnieje dokładnie jedno słowo długości zero zawierające co
-     najwyżej raz literę A, podobnie dla słowa długości 1. Słowa o długości większej
-     niż 1 i składające się wyłącznie z liter A nie istnieją. Zapiszmy enumerator:
-     \(\sum^{\infty}_{n=0}([n=0]+[n=1])\frac{z^n}{n!} = z + 1\). Taki sam enumerator
-     wyjdzie dla B.</p>
-     <p>W przypadku gdy rozpatrujemy słowa długości \(n\) złożone tylko z litery C
-     to będzie istniało tylko jedno słowo o ile \(n \ne 0\). Enumerator wygląda tak:
-     \(\sum^{\infty}_{n=0}[n\ne 0]\frac{z^n}{n!} = \sum^{\infty}_{n=0}\frac{z^n}{n!} - 1 = e^z - 1\). To samo dla litery D.</p>
-     <p>Na literę E nie nakładamy żadnych ograniczeń zatem enumeratorem jest
-     \(\sum^{\infty}_{n=0}\frac{z^n}{n!} = e^z\).</p>
-     <p>Teraz należy to wszystko ze sobą spleść:
-     \((z+1)^2(e^z-1)^2e^z = (z^2+2z+1)(e^{3z}-2e^{2z}+e^z)\). Po wymnożeniu
-     otrzymamy sumę następujących enumeratorów (strzałką oznaczyłem wynik wyciągnięty
-     z enumeratora tj. wartość przy \(\frac{z^6}{6!}\) w otrzymanym szeregu):<br>
-     \(e^z = \sum^{\infty}_{n=0}\frac{z^n}{n!} \leadsto 1\) <br>
-     \(-2\cdot e^{2z} = -2 \cdot \sum^{\infty}_{n=0}\frac{(2z)^n}{n!} =
-     \sum^{\infty}_{n=0}(-2 \cdot 2^n \frac{z^n}{n!})  \leadsto -2\cdot 2^6\) <br>
-     \(e^{3z} \leadsto 3^6\) <br>
-     \(2z\cdot e^z = 2\cdot \sum^{\infty}_{n=0}z\cdot \frac{z^n}{n!} =
-     2\cdot \sum^{\infty}_{n=0}\frac{n+1}{n+1}\cdot \frac{z^{n+1}}{n!} =
-     2\cdot \sum^{\infty}_{n=0}(n+1)\cdot \frac{z^{n+1}}{(n+1)!}\leadsto 2\cdot 6\)<br>
-     \(-4z\cdot e^{2z} \leadsto -4\cdot 2^5\cdot 6\) <br>
-     \(2z\cdot e^{3z} \leadsto 2\cdot 3^5\cdot 6\) <br>
-     \(z^2\cdot e^z \leadsto 6\cdot 5\) <br>
-     \(-4\cdot z^2\cdot e^{2z} \leadsto -4\cdot 2^4\cdot 6\cdot 5 \) <br>
-     \(z^2\cdot e^{3z} \leadsto 3^4\cdot 6\cdot 5\) <br>
-     Teraz wystarczy wszystko do siebie dodać. Wychodzi
-     \(602 + 2160 + 540 = 3302\).
-     </p>
+  <p>
+  Rozwiązanie oparte na rozwiązaniu zgłoszonym przez earlgreyz
+  w <a href="https://github.com/wakacjezmd/wakacjezmd.github.io/issues/13">
+  issue #13</a>
+  </p>
+  <p>
+    Użyjemy zasady włączeń i wyłączeń.
+  </p>
+  <p>
+    $$
+    \begin{align}
+    &X \text{- ciągi zawierające jedno \(A\) i jedno \(B\).} \\
+    &Y \text{- ciągi zawierające albo tylko jedno \(A\) albo tylko jedno \(B\).} \\
+    &Z \text{- ciągi bez \(A\) i bez \(B\).} \\
+    &\cdot_C \text{- cecha niezawierania \(C\).} \\
+    &\cdot_D \text{- cecha niezawierania \(D\).} \\
+    &\hfill \\
+    &|X| = 6 \cdot 5 \cdot 3^4 \\
+    &|X_C| = |X_D| = 6 \cdot 5 \cdot 2^4 \\
+    &|X_C \cap X_D| = 6 \cdot 5 \\
+    &\hfill \\
+    &|Y| = 6 \cdot 3^5 \\
+    &|Y_C| = |Y_D| = 6 \cdot 2^5 \\
+    &|Y_C \cap Y_D| = 6 \\
+    &\hfill \\
+    &|Z| = 3^6 \\
+    &|Z_C| = |Z_D| = 2^6 \\
+    &|Z_C \cap Z_D| = 1 \\
+    \end{align}
+    $$
+  </p>
+  <p>
+    Z zasady włączeń i wyłączeń:
+    $$
+    \begin{align}
+    \mathcal{D}_X(0) & = 6 \cdot 5 \ (3^4 - 2 \cdot 2^4 + 1) = 1500 \\
+    \mathcal{D}_Y(0) & = 6 \ (3^5 - 2 \cdot 2^5 + 1) = 1080 \\
+    \mathcal{D}_Z(0) & = 3^6 - 2 \cdot 2^6 + 1 = 602 \\
+    \end{align}
+    $$
+    Zatem ostateczny wynik, to:
+    $$
+    \mathcal{D}_X(0) + 2\mathcal{D}_Y(0) + \mathcal{D}_Z(0) = 4262
+    $$
+  </p>
+  <p>
+    earlgreyz napisał też program weryfikujący powyższy wynik. Kod programu
+    jest dostępny
+    <a href="https://github.com/wakacjezmd/wakacjezmd.github.io/files/317096/abcde.cpp.txt">
+    tutaj (link)</a>.
+  </p>
   </div>
 </div>
 
 ###Zadanie 3
 Wierzchołki grafu \\(G\_n\\) to wszystkie liczby złożone ze zbioru
-{1,...,n} a para {i,j} jest krawędzią wtedy i tylko wtedy gdy
+\\({1,\dots,n}\)) a para \\({i,j}\\) jest krawędzią wtedy i tylko wtedy gdy
 \\(i\perp j\\). Rozstrzygnij czy graf \\(G\_{1000}\\) jest:
 
 a) planarny
