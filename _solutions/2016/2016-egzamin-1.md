@@ -53,6 +53,17 @@ Udowodnij tożsamość \\(\sum^n\_{k=1}(-1)^k(k-1)!{n \brace k} = 0\\) dla
 
 ### Zadanie 3
 
+Uprość sumę \\(\sum^n\_{k-1}\left\lfloor \frac{n}{k} \right\rfloor \phi(k)\\).
+
+<div data-collapse>
+  <h4 class="collapsible">Rozwiązanie</h4>
+  <div class="solution">
+    <p>
+      http://math.stackexchange.com/questions/1155433/euler-phi-function-and-floor-function
+    </p>
+  </div>
+</div>
+
 ---
 
 ### Zadanie 4
