@@ -6,7 +6,7 @@ url: "http://wakacjezmd.github.io"
 github_username:  wakacjezmd
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
 permalink: pretty
 
 # Includes

@@ -5,15 +5,15 @@ permalink: /2015/egzamin/2/
 
 ## 2015 Egzamin poprawkowy
 
-###Zadanie 1
+### Zadanie 1
 
 ---
 
-###Zadanie 2
+### Zadanie 2
 
 ---
 
-###Zadanie 3
+### Zadanie 3
 Niech \\(G=(V,E)\\) będzie grafem takim, że \\(E=E\_1 \cup E\_2\\), gdzie graf
 \\(G\_1=(V, E\_1)\\) jest planarny, zaś graf \\(G\_2=(V, E\_2)\\) jest lasem.
 Udowodnij, że \\(\chi(G) < 9\\).
@@ -39,7 +39,7 @@ Udowodnij, że \\(\chi(G) < 9\\).
 
 ---
 
-###Zadanie 4
+### Zadanie 4
 
 Oblicz \\((1\cdot 3\cdot 5\dots 97)^2 \mod{101}\\).
 
