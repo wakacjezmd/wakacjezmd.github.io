@@ -5,14 +5,15 @@ permalink: /2011/egzamin/1/
 
 ## 2011 Egzamin
 
-###Zadanie 1
+### Zadanie 1
 
 Niech \\(b\_r (n,k)\\) oznacza liczbę \\(n\\)-permutacji o \\(k\\) cyklach, w
 których wszystkie liczby \\(1,2,...,r\\) są w jednym cyklu. Udowodnij, że dla
 \\(n \geq r\\) mamy:
 
 $$
-\sum\limits\_{k=1}^n b\_r (n,k) x^k = (r-1)! \frac{x^\overline{n}}{(x+1)^\overline{r-1} }
+\sum\limits\_{k=1}^n b\_r (n,k) x^k =
+(r-1)! \frac{x^\overline{n}}{(x+1)^\overline{r-1} }
 $$
 
 *WSKAZÓWKA: Indukcja.*
@@ -41,16 +42,19 @@ $$
 
       $$
       \sum\limits_{k=1}^{n+1} b_r (n+1,k) x^k = \\
-      n \sum\limits_{k=1}^{n+1} b_r (n,k) x^k + \sum\limits_{k=1}^{n+1} b_r (n,k-1) x^k = \\
-      n \sum\limits_{k=1}^{n} b_r (n,k) x^k + \sum\limits_{k=0}^{n} b_r(n,k)x^{k+1} = \\
-      n \sum\limits_{k=1}^{n} b_r (n,k) x^k + x \sum\limits_{k=1}^{n} b_r(n,k)x^{k} = \\
+      n \sum\limits_{k=1}^{n+1} b_r (n,k) x^k
+        + \sum\limits_{k=1}^{n+1} b_r (n,k-1) x^k = \\
+      n \sum\limits_{k=1}^{n} b_r (n,k) x^k
+        + \sum\limits_{k=0}^{n} b_r(n,k)x^{k+1} = \\
+      n \sum\limits_{k=1}^{n} b_r (n,k) x^k
+        + x \sum\limits_{k=1}^{n} b_r(n,k)x^{k} = \\
       (n+x) (r-1)! \frac{x^\overline{n}}{(x+1)^\overline{r-1}} = \\
       (r-1)! \frac{x^\overline{n+1}}{(x+1)^\overline{r-1}}
       $$
 
       Pierwsza równość została otrzymana poprzez zastosowanie obserwacji. Druga
       poprzez usunięcie wyrazu zerowego z pierwszej sumy oraz przeindeksowanie
-      drugiej.  Trzecia poprzez wyrzucenie zerowego wyrazu z drugiej sumy.
+      drugiej. Trzecia poprzez wyrzucenie zerowego wyrazu z drugiej sumy.
       Kolejne równości to zastosowanie założenia indukcyjnego i proste rachunki
       na silniach.
     </p>
