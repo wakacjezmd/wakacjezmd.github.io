@@ -17,10 +17,10 @@ Udowodnij tożsamość \\(\sum^n\_{k=1}(-1)^k(k-1)!{n \brace k} = 0\\) dla
     $$
     \begin{align*}
       \sum^n_{k=1}(-1)^k(k-1)!{n \brace k}
-      &=\sum^n_{k=1}(-1)^k(k-1)^{\underline{k-1}}\left(k{n-1 \brace k} +
+      &=\sum^n_{k=1}(-1)^k(k-1)!\left(k{n-1 \brace k} +
        {n-1 \brace k-1}\right) = \\
-      &=\sum^n_{k=1}(-1)^k k^{\underline{k}}{n-1 \brace k} +
-       \sum^n_{k=1}(-1)^k (k-1)^{\underline{k-1}}{n-1 \brace k-1}
+      &=\sum^n_{k=1}(-1)^k k!{n-1 \brace k} +
+       \sum^n_{k=1}(-1)^k (k-1)!{n-1 \brace k-1}
     \end{align*}
     $$
   </p>
@@ -28,17 +28,27 @@ Udowodnij tożsamość \\(\sum^n\_{k=1}(-1)^k(k-1)!{n \brace k} = 0\\) dla
     Teraz rozpiszmy obie sumy:
     $$
     \begin{align*}
-      &=&&- 1^{\underline{1}}{n-1 \brace 1}
-       + 2^{\underline{2}}{n-1 \brace 2}
-       - 3^{\underline{3}}{n-1 \brace 3}
+      &=&&- 1!{n-1 \brace 1}
+       + 2!{n-1 \brace 2}
+       - 3!{n-1 \brace 3}
        + \dots
-       \pm (-1)^{n-1}(n-1)^{\underline{n-1}}{n-1 \brace n-1} + \\
-      &&&- 0^{\underline{0}}{n-1 \brace 0}
-       + 1^{\underline{1}}{n-1 \brace 1}
-       - 2^{\underline{2}}{n-1 \brace 2}
+       + (-1)^{n-1}(n-1)!{n-1 \brace n-1}
+       + (-1)^{n}n!{n-1 \brace n} + \\
+      &&&- 0!{n-1 \brace 0}
+       + 1!{n-1 \brace 1}
+       - 2!{n-1 \brace 2}
        - \dots
-       \pm (-1)^{n}(n-1)^{\underline{n-1}}{n-1 \brace n-1} = \\
-      & = 0
+       + (-1)^{n-1}(n-2)!{n-1 \brace n-2}
+       + (-1)^{n}(n-1)!{n-1 \brace n-1}\\
+    \end{align*}
+    $$
+  </p>
+  <p>
+    Możemy zauważyc redukcję kolejnych wyrazów, w wyniku czego, powyższa suma zredukuje się do:
+    $$
+    \begin{align*}
+      = -0!{n-1 \brace 0} + (-1)^{n} \cdot n! \cdot {n-1 \brace n}
+      = 1 \cdot [n-1 = 0] + (-1)^{n} \cdot n! \cdot 0 = 0 + 0 = 0
     \end{align*}
     $$
   </p>
@@ -51,7 +61,7 @@ Udowodnij tożsamość \\(\sum^n\_{k=1}(-1)^k(k-1)!{n \brace k} = 0\\) dla
 
 Niech \\( UP(n) \\) będzie zbiorem _uporządkowanych podziałów_ liczby \\( n \\),
 czyli ciągów \\( a = (a_1, \dots, a_k) \\) dodatnich liczb całkowitych
-takich, że \\( a_1 + \dots + a_k = n \\), i niech 
+takich, że \\( a_1 + \dots + a_k = n \\), i niech
 \\( f(a) = a_1 \cdot a_2 \dots a_n \\) będzie _iloczynem składników_ takiego
 podziału. Udowodnij, że \\( \sum\limits_{a \in UP(n)}f(a) = F_{2n} \\), gdzie
 \\( F_n \\) oznacza \\( n \\)-tą liczbę Fibonacciego.
@@ -74,7 +84,7 @@ _Wkazówka_: Niech \\( a' \\) oznacza podział powstający z
   </p>
   <p>
     $$
-    \sum\limits_{a \in UP(1)}f(a) = 1 = F_2 \qquad 
+    \sum\limits_{a \in UP(1)}f(a) = 1 = F_2 \qquad
     \sum\limits_{a \in UP(1)}f(a') = 1 = F_1
     $$
   </p>
@@ -114,7 +124,7 @@ _Wkazówka_: Niech \\( a' \\) oznacza podział powstający z
     \( f(a) = f(b) + f(b') \), z czego bezpośrednio wynika
     $$
         \sum\limits_{a \in B}f(a) = \sum\limits_{b \in UP(n)}f(b)
-                                  + \sum\limits_{b' \in UP(n)}f(b) = 
+                                  + \sum\limits_{b' \in UP(n)}f(b) =
                                     F_{2n} + F_{2n-1} = F_{2n+1}
     $$
     Ostatecznie
