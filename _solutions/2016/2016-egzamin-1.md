@@ -76,7 +76,7 @@ _Wkazówka_: Niech \\( a' \\) oznacza podział powstający z
   <p>
     Tezę rozszerzamy o dodatkowy warunek:
     $$
-    \sum\limits_{a \in UP(0)}f(a') = F_{2n - 1}, ~~ n > 0
+    \sum\limits_{a \in UP(n)}f(a') = F_{2n - 1}, ~~ n > 0
     $$
   </p>
   <p>
