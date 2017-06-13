@@ -145,7 +145,7 @@ _Wkazówka_: Niech \\( a' \\) oznacza podział powstający z
 
 ### Zadanie 3
 
-Uprość sumę \\(\sum^n\_{k-1}\left\lfloor \frac{n}{k} \right\rfloor \phi(k)\\).
+Uprość sumę \\(\sum^n\_{k=1}\left\lfloor \frac{n}{k} \right\rfloor \phi(k)\\).
 
 <div data-collapse>
   <h4 class="collapsible">Rozwiązanie</h4>
