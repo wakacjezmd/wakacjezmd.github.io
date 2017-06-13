@@ -95,16 +95,16 @@ _Wkazówka_: Niech \\( a' \\) oznacza podział powstający z
       \( a \) <b>kończy się jedynką</b>. Zbiór takich \( a \) oznaczmy przez
       \( A \). Taki podział możemy otrzymać z pewnego \( b \in UP(n) \)
       przez dopisanie jedynki na końcu. Wówczas oczywiście
-      \( f(a') = f(a) = f(b) \) (gdzie \( a' \) - jak we wskazówce)
+      \( f(a') = f(a) = f(b) \) (gdzie \( a' \) - jak we wskazówce).
     </li>
     <li>
       \( a \) <b>kończy się liczbą</b> \( \neq 1 \). Zbiór takich \( a \)
       oznaczmy przez \( B \). Taki podział otrzymujemy przez dodanie jedynki do
       <b>ostatniego składnika</b> pewnego \( b \in UP(n) \). Wówczas
-      oczywiście \( f(a') = f(b') \)<br>
-      Takie przypisanie \( a \to b \) jest <b>na</b>, co jest istotne
-      dla reszty dowodu.
+      oczywiście \( f(a') = f(b') \).
     </li></ul>
+    Takie przypisanie \( a \to b \) jest <b>na</b>, co jest istotne dla reszty
+    dowodu.
   </p>
   <p>
     Jasne jest zatem, że \( A \cup B = UP(n+1), A \cap B = \emptyset \) oraz
@@ -115,7 +115,7 @@ _Wkazówka_: Niech \\( a' \\) oznacza podział powstający z
     $$
     \sum\limits_{a \in B} f(a') = \sum \limits_{b \in UP(n)} f(b') = F_{2n - 1}
     $$
-    Z czego wynika, że
+    z czego wynika, że
     $$
     \sum\limits_{a \in UP(n+1)} f(a') =
         \sum\limits_{a \in A} f(a') + \sum\limits_{a \in A} f(a') =
@@ -137,7 +137,7 @@ _Wkazówka_: Niech \\( a' \\) oznacza podział powstający z
                                       + \sum\limits_{a \in B}f(a) =
                                         F_{2n} + F_{2n+1} = F_{2n+2}
     $$
-    Co kończy dowód
+    co kończy dowód.
   </p>
   </div>
 </div>
