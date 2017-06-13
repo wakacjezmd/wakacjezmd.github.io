@@ -90,17 +90,21 @@ _Wkazówka_: Niech \\( a' \\) oznacza podział powstający z
   </p>
   <p>
     Załóżmy teraz, że teza jest prawdziwa dla \( n \in \mathbb{N} \).
-    Weźmy \( a \in UP(n+1) \). Możemy rozpatrzyć dwa przypadki:<br>
-    \( a \) <b>kończy się jedynką</b>. Zbiór takich \( a \) oznaczmy przez
-    \( A \). Taki podział możemy otrzymać z pewnego \( b \in UP(n) \)
-    przez dopisanie jedynki na końcu. Wówczas oczywiście
-    \( f(a') = f(a) = f(b) \) (gdzie \( a' \) - jak we wskazówce)<br>
-    \( a \) <b>kończy się liczbą</b> \( \neq 1 \). Zbiór takich \( a \) oznaczmy
-    przez \( B \). Taki podział otrzymujemy przez dodanie jedynki do
-    <b>ostatniego składnika</b> pewnego \( b \in UP(n) \). Wówczas
-    oczywiście \( f(a') = f(b') \)<br>
-    Takie przypisanie \( a \to b \) jest <b>na</b>, co jest istotne
-    dla reszty dowodu.
+    Weźmy \( a \in UP(n+1) \). Możemy rozpatrzyć dwa przypadki:
+    <ul><li>
+      \( a \) <b>kończy się jedynką</b>. Zbiór takich \( a \) oznaczmy przez
+      \( A \). Taki podział możemy otrzymać z pewnego \( b \in UP(n) \)
+      przez dopisanie jedynki na końcu. Wówczas oczywiście
+      \( f(a') = f(a) = f(b) \) (gdzie \( a' \) - jak we wskazówce)
+    </li>
+    <li>
+      \( a \) <b>kończy się liczbą</b> \( \neq 1 \). Zbiór takich \( a \)
+      oznaczmy przez \( B \). Taki podział otrzymujemy przez dodanie jedynki do
+      <b>ostatniego składnika</b> pewnego \( b \in UP(n) \). Wówczas
+      oczywiście \( f(a') = f(b') \)<br>
+      Takie przypisanie \( a \to b \) jest <b>na</b>, co jest istotne
+      dla reszty dowodu.
+    </li></ul>
   </p>
   <p>
     Jasne jest zatem, że \( A \cup B = UP(n+1), A \cap B = \emptyset \) oraz
