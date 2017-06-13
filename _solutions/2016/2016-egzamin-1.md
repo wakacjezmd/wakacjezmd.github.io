@@ -162,4 +162,8 @@ Uprość sumę \\(\sum^n\_{k=1}\left\lfloor \frac{n}{k} \right\rfloor \phi(k)\\)
 
 ### Zadanie 4
 
+Kolorujemy pola prostokąta o \\(3\\) wierszach i \\(4\\) kolumnach z użyciem dwóch kolorów.
+Dwa kolorowania utożsamiamy, jeżeli powstaje z drugiego przez zastosowanie _dowolnej_ permutacji wierszy i _cyklicznego przesunięcia_ kolumn.
+Znajdź liczbę istotnie różnych kolorowań, w których każdy z kolorów jest użyty po \\(6\\) razy.
+
 ---
