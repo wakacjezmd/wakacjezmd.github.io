@@ -54,6 +54,17 @@ Znajdź zwarty wzór na \\(a\_n(k)\\) dla \\(k \gt 1\\).
 ### Zadanie 3
 Znajdź wszystkie rozwiązania kongruencji \\(x^2 - 3x - 5\equiv 0\ (mod\ 343)\\).
 
+<div data-collapse>
+  <h4 class="collapsible">Rozwiązanie</h4>
+  <div class="solution">
+    <p>
+      <a href="https://math.stackexchange.com/q/2324171/237591">
+        https://math.stackexchange.com/q/2324171/237591
+      </a>
+    </p>
+  </div>
+</div>
+
 ---
 
 ### Zadanie 4
