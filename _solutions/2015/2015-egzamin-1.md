@@ -8,7 +8,7 @@ permalink: /2015/egzamin/1/
 ### Zadanie 1
 Udowodnij tożsamość
 
-$$\sum^{n}\_{k=0}k^m = \sum^{m}\_{k=1}{n+1 \choose k+1}{m\brace k}k! $$
+$$\sum^{n}_{k=0}k^m = \sum^{m}_{k=1}{n+1 \choose k+1}{m\brace k}k! $$
 
 dla \\(n, m \ge 1\\). WSKAZÓWKA: Rozważ funkcje
 \\(f:\\left\\{1,...,m+1\\right\\} \rightarrow \\left\\{1,...,n+1\\right\\}\\)
