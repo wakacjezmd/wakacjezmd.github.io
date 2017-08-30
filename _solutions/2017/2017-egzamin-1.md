@@ -37,4 +37,13 @@ permalink: /2017/egzamin/1/
 
 ### Zadanie 4
 
+<div data-collapse>
+  <h4 class="collapsible">Rozwiązanie</h4>
+  <div class="solution">
+    <p>
+      Rozwiązanie jest dostępne <a href="https://math.stackexchange.com/questions/2113657/burnsides-lemma-applied-to-grids-with-interchanging-rows-and-columns">tutaj</a>.
+    </p>
+  </div>
+</div>
+
 ---
