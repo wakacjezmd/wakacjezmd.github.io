@@ -9,6 +9,15 @@ permalink: /2018/egzamin/1/
 
 Niech \\( f\_n(k) \\) oznacza liczbę \\( n \\)-permutacji o dokładnie \\( k \\) punktach stałych. Uprość sumę \\( \sum\_{k=0}^{n} k f\_n(k) \\).
 
+<div data-collapse>
+  <h4 class="collapsible">Rozwiązanie</h4>
+  <div class="solution">
+    <p>Skoro \( f_n(k) \) to liczba \( n \)-permutacji o \( k \) punktach stałych, to \( \sum_{k=0}^n k f_n(k) \) jest liczbą punktów stałych łącznie we wszystkich \( n \)-permutacjach.</p>
+    <p>Rozważmy wszystkie \( n \)-permutacje, w których \( x \) jest punktem stałym. Punkt stały \( x \) w każdej z nich zwiększa zadaną sumę o \( 1 \). Takich permutacji jest \( (n-1)! \). Zatem z punktów stałych w \( x \) suma zwiększa się o \( (n-1)! \).</p>
+    <p>\( x \) możemy wybrać na \( n \) sposobów, więc suma jest równa \( n (n-1)! = n! \).</p>
+  </div>
+</div>
+
 ---
 
 ### Zadanie 2
