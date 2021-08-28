@@ -58,8 +58,8 @@ uporządkowanych podziałów liczby \\(n+2\\) na składniki \\( \ge 2 \\).
       warunkami brzegowymi \( a_0 = 1, a_1 = 1 \).
     </p>
     <p>
-      Pozostało pokazać, że drugi wzór rekurencyjny jest równoważny pierwszemu. Pozostawmy
-      to jako proste ćwiczenie na indukcję.
+      Pozostało pokazać, że drugi wzór rekurencyjny jest równoważny pierwszemu.
+      Pozostawiamy to jako proste ćwiczenie na indukcję.
     </p>
   </div>
 </div>
