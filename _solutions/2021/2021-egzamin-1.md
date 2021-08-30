@@ -91,7 +91,7 @@ Niech \\(\mathrm{fr}(x) = x− \lfloor x \rfloor\\) oznacza *część ułamkową
     dodatkowo, że \(x^{-1} y^{-1} = (xy)^{-1}\) (co bardzo łatwo pokazać).
 
       \[ \begin{align*}
-          q &\equiv (-1)^{20} \cdot (12 \cdot 34 \cdot 56 \cdot 78) \cdot (12 \cdot 34 \cdot 56 \cdot 78)^{-1} \cdot (9) \cdot (-9 \cdot 10 \cdot 11)^{-1} \\[3pt]
+          q &\equiv (-1)^{20} \cdot (2 \cdot 12 \cdot 30 \cdot 56) \cdot (2 \cdot 12 \cdot 30 \cdot 56)^{-1} \cdot (9) \cdot (-9 \cdot 10 \cdot 11)^{-1} \\[3pt]
           q &\equiv 9 (20)^{-1} \\[3pt]
          \end{align*}
       \]
