@@ -41,7 +41,7 @@ enumeratorze.
     <p>
       Teraz rozważmy transpozycję dF podziałów <em>gładkich</em>. Istotnie, jeśli sąsiednie składniki nie różnią się o
       siebie o więcej niż jeden w podziale wejściowym, to w podziale wyjściowym liczba składników równych \(i\) będzie
-      nie większa niż \(1\). W wyniku tego mapowania uzyskamy więc jednoznacznie podziały <em>róznowartościowe</em>.
+      nie większa niż \(1\). W wyniku tego mapowania uzyskamy więc jednoznacznie podziały <em>różnorodne</em>.
     </p>
     <p>
       Pokazaliśmy, że istnieje bijekcja pomiędzy obiema typami podziałów. Enumerator podziałów <em>gładkich</em> jest
