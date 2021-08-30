@@ -99,7 +99,7 @@ Niech \\(\mathrm{fr}(x) = x− \lfloor x \rfloor\\) oznacza *część ułamkową
     Odwrotność \(\text{mod } 101\) liczby \(20\) możemy wyznaczyć, korzystając z rozszerzonego algorytmu Euklidesa.
     Otrzymujemy \( 1 = (-5) \cdot 20 + 101 \), więc odwrotność wynosi \( -5 \). Stąd \(q \equiv 9 \cdot (-5) \equiv 56 \; (\text{mod } 101)\).
       \[
-         \mathrm{fr}\left(\frac{998!}{101^{10}}\right) = \frac{56}{101}.
+         \mathrm{fr}\left(\frac{998!}{101^{10}}\right) = \frac{56}{101}
       \]
     </p>
   </div>
