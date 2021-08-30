@@ -17,7 +17,7 @@ $$ \sum^{n}_{k=0} {n + k \choose k} 2^{-k} $$
 
 Podział liczby $$n$$ na składniki $$ a_{1} , ... , a_{r} $$, gdzie $$ a_{1} \leq ... \leq a_{r} $$,
 nazywamy *gładkim*, jeśli $$ a_{1} = 1 $$ oraz $$ a_{i} - a_{i-1} \leq 1 $$ dla $$ 2 \leq i \leq r $$.
-Znajdź enumerator podziałów gładich.
+Znajdź enumerator podziałów gładkich.
 
 Wskazówka: wskaż bijekcję między podziałami gładkimi a pewną klasą podziałów o znanym (np. z wykładu)
 enumeratorze.
