@@ -31,7 +31,7 @@ Niech \\(f(k)\\) oznacza iloczyn niezerowych cyfr liczby k (w szczególności \\
 
 \\[ S(n) = \sum^{10^{n}-1}_{k=0} f(k) \\]
 
-(suma wartości funkcji \\(f\\) dla wszystkich argumentów mających co najwyżej \(n\) cyfr). Oblicz
+(suma wartości funkcji \\(f\\) dla wszystkich argumentów mających co najwyżej \\(n\\) cyfr). Oblicz
 \\(S(100) \bmod 1001\\).
 
 <div data-collapse>
