@@ -22,6 +22,42 @@ Znajdź enumerator podziałów gładkich.
 Wskazówka: wskaż bijekcję między podziałami gładkimi a pewną klasą podziałów o znanym (np. z wykładu)
 enumeratorze.
 
+<div data-collapse>
+  <h4 class="collapsible">Rozwiązanie</h4>
+  <div class="solution">
+    <p>
+      Weźmy dowolny podział liczby \(n\) na posortowane niemalejąco składniki: \(A = (a_1, a_2, \ldots, a_k)\). Rozważmy
+      podział \(B\), który powstał przez transponowanie diagramu Ferresa podziału \(A\). Odnotujmy, że taki podział
+      będzie miał \(a_k\) różnych składników; zaś składników równych \(i\) będzie wówczas dokładnie \(a_{k-i+1} - [i <
+      k] \cdot a_{k-i} \).
+    </p>
+    <p>
+      Rozważmy transpozycję diagramów Ferrersa podziałów <em>różnorodnych</em> – czyli takich, że dwa równe składniki
+      nie powtarzają się w jednym podziale. Zauważmy, że wówczas dla dowolnego \(i \in \{1, 2 \ldots, k\}\) będziemy
+      mieli dodatnią liczbę składników równych \(i\); w przeciwnym bowiem razie \(a_{k-i+1} - a_{k-i} = 0\), więc
+      podział wejściowy (przed transpozycją) zawierał dwa równe składniki – sprzeczność. W wyniku tego mapowania
+      uzyskujemy więc jednoznacznie podziały <em>gładkie</em>.
+    </p>
+    <p>
+      Teraz rozważmy transpozycję dF podziałów <em>gładkich</em>. Istotnie, jeśli sąsiednie składniki nie różnią się o
+      siebie o więcej niż jeden w podziale wejściowym, to w podziale wyjściowym liczba składników równych \(i\) będzie
+      nie większa niż \(1\). W wyniku tego mapowania uzyskamy więc jednoznacznie podziały <em>róznowartościowe</em>.
+    </p>
+    <p>
+      Pokazaliśmy, że istnieje bijekcja pomiędzy obiema typami podziałów. Enumerator podziałów <em>gładkich</em> jest
+      więc taki sam, jak enumerator podziałów <em>różnorodnych</em>, i ma postać:
+
+      \[
+          A(x) = (1+x)(1+x^2)(1+x^3) \cdots
+      \]
+
+      Zainteresowanych tym, dlaczego powyższy enumerator ma właśnie taką postać, odsyłamy do
+      <a href="https://youtu.be/Gtq8Z9w9YPI?t=508">wykładu dr. Malinowskiego</a>.
+
+    </p>
+  </div>
+</div>
+
 ---
 
 ### Zadanie 3
@@ -51,7 +87,7 @@ Niech \\(f(k)\\) oznacza iloczyn niezerowych cyfr liczby k (w szczególności \\
       pozycji \(i\): dla zera \(1\), a dla pozostałych cyfr składnik odpowiednio od \(1\) do \(9\).
     </p>
     <p>
-      Odnotujmy, że \(1001 = 7 \cdot 11 \cdot 13\). Ponieważ te składniki są pierwsze (a w szczególności parami względnie
+      Odnotujmy, że \(1001 = 7 \cdot 11 \cdot 13\). Ponieważ te czynniki są pierwsze (a w szczególności parami względnie
       pierwsze), możemy zapisać układ równoważny szukanej kongruencji.
 
       \[
