@@ -19,7 +19,7 @@ Znajdź współczynnik \\(x_1 x_2 \cdots x_6\\) przy wyrażeniu:
 
 gdzie \\( X = x_1 + x_2 + \cdots + x_6 \\). *Uwaga:* to zadanie należy rozwiązać bez wspomagania komputerowego.
 
-<div>
+<div data-collapse>
   <h4 class="collapsible">Rozwiązanie</h4>
   <div class="solution">
     <p>
