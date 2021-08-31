@@ -105,3 +105,6 @@ Niech \\(\mathrm{fr}(x) = x− \lfloor x \rfloor\\) oznacza *część ułamkową
   </div>
 </div>
 
+---
+
+### Zadanie 4
