@@ -11,6 +11,10 @@ Uprość sumę:
 
 $$ \sum^{n}_{k=0} {n + k \choose k} 2^{-k} $$
 
+<div>
+  <h4 class="collapsible"><a href="https://math.stackexchange.com/q/1874816">Rozwiązanie (link)</a></h4>
+</div>
+
 ---
 
 ### Zadanie 2
