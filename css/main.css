@@ -117,6 +117,10 @@ a:visited { color: #205caa; }
   background-color: #FEE !important;
 }
 
+q {
+  quotes: "„" "”" "»" "«";
+}
+
 /* Site header */
 
 .title-wrap {
