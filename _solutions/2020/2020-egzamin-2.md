@@ -78,7 +78,7 @@ gdzie \\( X = x_1 + x_2 + \cdots + x_6 \\). *Uwaga:* to zadanie należy rozwiąz
 
 Znajdź liczbę uporządkowanych par liczb naturalnych \\(\langle a,b \rangle\\) takich, że \\(\text{NWW}(a,b) = 10!\\).
 
-<div>
+<div data-collapse>
   <h4 class="collapsible">Rozwiązanie</h4>
   <div class="solution">
     <p>
@@ -92,7 +92,7 @@ Znajdź liczbę uporządkowanych par liczb naturalnych \\(\langle a,b \rangle\\)
       \(b = p_1^{\beta_1} p_2^{\beta_2} \ldots p_k^{\beta_k}\), to wówczas:
 
       \[
-          \mathrm{NWW}(a,b) = p_1^{\max(\alpha_1, \beta_1)} p_2^{\max(\alpha_2, \beta_2)} \ldots\, p_k^{\max(\alpha_k, \beta_k)}
+          \mathrm{NWW}(a,b) = p_1^{\max(\alpha_1, \beta_1)} p_2^{\max(\alpha_2, \beta_2)} \ldots\, p_k^{\max(\alpha_k, \beta_k)}.
       \]
 
       Czyli żadna z liczb \(\langle a,b \rangle\) nie może mieć dzielnika różnego od \(2, 3, 5, 7\), a jedna z nich musi
