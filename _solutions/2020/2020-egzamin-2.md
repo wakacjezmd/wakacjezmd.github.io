@@ -71,6 +71,36 @@ gdzie \\( X = x_1 + x_2 + \cdots + x_6 \\). *Uwaga:* to zadanie należy rozwiąz
 
 ### Zadanie 3
 
+Udowodnij, że w \\(n\\)-wierzchołkowym grafie spójnym \\(G\\) zachodzi oszacowanie:
+
+\\[
+    \chi(G) + \textrm{diam}(G) \leq n+1.
+\\]
+
+Pokaż, że dla każdego \\(d > 0\\) i dostatecznie dużego \\(n\\) istnieje graf \\(n\\)-wierzchołkowy o średnicy \\(d\\),
+dla którego to oszacowanie jest dokładne.
+
+<div data-collapse>
+  <h4 class="collapsible">Rozwiązanie</h4>
+  <div class="solution">
+  Rozważmy najdłuższą ścieżkę w grafie pomiędzy wierzchołkami \(v_s\), \(v_e\). Da się ją pokolorować na dwa kolory; w
+  przeciwnym razie pomiędzy niesąsiednimi wierzchołkami na ścieżce istnieje krawędź, czyli istnieje krótsza ścieżka z
+  \(v_s\) do \(v_e\) – sprzeczność. Pozostałych wierzchołków jest \(n-(\mathrm{diam}(G)+1)\), co daje nam górne
+  oszacowanie na minimalną liczbę ich kolorowań, stąd otrzymujemy:
+
+  \[
+      \chi(G) + \mathrm{diam}(G) \leq 2 + n-(\mathrm{diam}(G)+1) + \mathrm{diam}(G) = n + 1.
+  \]
+
+  Przykładem grafu, dla którego to oszacowanie jest dokładne, jest ścieżka \(n\)-elementowa, którą oczywiście można
+  pokolorować na minimalnie dwa kolory, a której średnica wynosi \(d=n-1\). Jeśli chcemy znaleźć taki \(n\)-graf dla
+  dowolnego \(d\) i dowolnego \(n \geq d+1\), to rozważmy ścieżkę \(d+1\)-elementową, której dwa ostatnie wierzchołki są również
+  wierzchołkami \((n -(d+1)+ 2)\)-kliki. Klikę w tym grafie możemy pokolorować na minimalnie \(n - d + 1\) kolorów,
+  natomiast pozostałe wierzchołki ścieżki na dowolne dwa kolory, na które pokolorowana została klika. Mamy więc
+  \(\chi(G) + \mathrm{diam}(G) = n - d + 1 +d - d = n+1\), czyli oszacowanie jest dokładne.
+  </div>
+</div>
+
 ---
 
 ### Zadanie 4
