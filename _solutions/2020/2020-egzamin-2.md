@@ -76,3 +76,40 @@ gdzie \\( X = x_1 + x_2 + \cdots + x_6 \\). *Uwaga:* to zadanie należy rozwiąz
 ### Zadanie 4
 
 
+Znajdź liczbę uporządkowanych par liczb naturalnych \\(\langle a,b \rangle\\) takich, że \\(\text{NWW}(a,b) = 10!\\).
+
+<div>
+  <h4 class="collapsible">Rozwiązanie</h4>
+  <div class="solution">
+    <p>
+      Odnotujmy, że:
+
+      \[
+          10! = 2^8 \cdot 3^4 \cdot 5^2 \cdot 7^1
+      \]
+
+      Wiadomo (m.in. z wykładu), że jeśli \(a = p_1^{\alpha_1} p_2^{\alpha_2} \ldots p_k^{\alpha_k}\) oraz
+      \(b = p_1^{\beta_1} p_2^{\beta_2} \ldots p_k^{\beta_k}\), to wówczas:
+
+      \[
+          \mathrm{NWW}(a,b) = p_1^{\max(\alpha_1, \beta_1)} p_2^{\max(\alpha_2, \beta_2)} \ldots\, p_k^{\max(\alpha_k, \beta_k)}
+      \]
+
+      Czyli żadna z liczb \(\langle a,b \rangle\) nie może mieć dzielnika różnego od \(2, 3, 5, 7\), a jedna z nich musi
+      mieć go w potędze takiej, jak \(10!\).
+    </p>
+
+    <p>
+      Zamiast par liczb \(a, b\) możemy więc rozpatrywać więc pary ciągów
+      \((q_1, q_2, q_3, q_4),\, (t_1, t_2, t_3, t_4)\) takie, że \( (\max(q_1, t_1), \ldots, \max(q_4,
+      t_4)) = (8, 4, 2, 1)\). Nietrudno zauważyć, że takich ciągów jest:
+
+      \[
+          \prod_{i \in \{ 8, 4, 2, 1 \}}  \left( 2i + 1 \right) = 2295.
+      \]
+
+      (Jeśli np. liczba \(q_1 = 0\ldots7\), wówczas \(t_1 = 8\), i na odwrót, co daje nam \(2i\), a także może być \(q_1
+      = t_1 = 8\), co daje nam \(1\)).
+    </p>
+  </div>
+</div>
