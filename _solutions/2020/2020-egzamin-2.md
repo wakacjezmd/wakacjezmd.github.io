@@ -94,10 +94,10 @@ dla którego to oszacowanie jest dokładne.
 
   Przykładem grafu, dla którego to oszacowanie jest dokładne, jest ścieżka \(n\)-elementowa, którą oczywiście można
   pokolorować na minimalnie dwa kolory, a której średnica wynosi \(d=n-1\). Jeśli chcemy znaleźć taki \(n\)-graf dla
-  dowolnego \(d\) i dowolnego \(n \geq d+1\), to rozważmy ścieżkę \(d+1\)-elementową, której dwa ostatnie wierzchołki są również
+  dowolnego \(d\) i dowolnego \(n \geq d+1\), to rozważmy ścieżkę (\(d+1\))-elementową, której dwa ostatnie wierzchołki są również
   wierzchołkami \((n -(d+1)+ 2)\)-kliki. Klikę w tym grafie możemy pokolorować na minimalnie \(n - d + 1\) kolorów,
   natomiast pozostałe wierzchołki ścieżki na dowolne dwa kolory, na które pokolorowana została klika. Mamy więc
-  \(\chi(G) + \mathrm{diam}(G) = n - d + 1 +d - d = n+1\), czyli oszacowanie jest dokładne.
+  \(\chi(G) + \mathrm{diam}(G) = n - d + 1 - d = n+1\), czyli oszacowanie jest dokładne.
   </div>
 </div>
 
