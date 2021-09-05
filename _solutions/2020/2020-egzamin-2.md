@@ -7,6 +7,79 @@ permalink: /2020/egzamin/2/
 
 ### Zadanie 1
 
+Niech \\(p_{n,k}\\) oznacza liczbę \\(n\\)-permutacji mających dokładnie \\(k\\) punktów stałych i niech \\(r\\) będzie ustaloną
+dodatnią liczbą naturalną. Udowodnij tożsamość:
+
+\\[
+    \sum_{k=0}^{n} k^r p_{n,k} = n! \sum_{t=1}^{r} {r \brace t} \quad \text{dla $n \geq r$.}
+\\]
+
+<div data-collapse>
+  <h4 class="collapsible">Rozwiązanie</h4>
+  <div class="solution">
+  <p>
+    Zadanie z gatunku tych raczej trudniejszych, niż prostszych &#x1F605;.
+  </p>
+  <ul>
+    <li> <p> (\(r = 0\)). Proste. </p> </li>
+    <li>
+      <p>
+        (\(r = 1\)). Rozważmy działanie grupy \(s_n\) na zbiorze \(\{1, 2, 3, 4, \ldots, n\}\), gdzie \(s_n\) to grupa
+        \(n\)-permutacji. (Przykładowo weźmy grupę \(s_6\). Dla pewnej permutacji \(\sigma \in s_6\), \(\sigma = (1\,
+        5)(3\, 4\, 2)(6)\), mamy \(\sigma(5) = 1\), \(\sigma(4) = 2\), \(\sigma(6) = 6\) i tak dalej).
+      </p>
+
+      <p>
+        Ile jest elementów w grupie \(s_n\)? Oczywiście \((n!)\).
+        Ile mamy orbit działania grupowego? Oczywiście każdy element zbioru może przejść przy pewnej permutacji na
+        dowolny inny (co daje nam jedną orbitę), stąd \(|\textrm{Orb}_{s_n}(X)| = 1\). 
+        Ile mamy punktów stałych działania grupowego? Odnotujmy, że:
+        \[
+          \sum_{\sigma \in s_n} |\textrm{fix}(\sigma)| = \sum_{k=0}^{n} p_{n,k} k
+        \]
+        Skąd to wynika? Pogrupowaliśmy permutację po punktach stałych. Dla każdej permutacji o \(k\) punktach stałych
+        mamy – bez zaskoczenia – \(k\) punktów stałych. Po podstawieniu wyliczonych wartości do lematu Burnside'a,
+        otrzymujemy szukaną tożsamość:
+        \[
+          \sum_{k=0}^{n} k \, p_{n,k} = |s_n| |\textrm{Orb}_{s_n}(X)| =  n!
+        \]
+      </p>
+    </li>
+    <li>
+      <p>
+        (\(r\) dowolne). Rozważmy działanie <em>diagonalne</em> grupy \(s_n\) na zbiorze <em>\(r\)-krotek:</em> \(\{1,
+        2, 3, 4, \ldots, n\}^{r}\).  <em>Diagonalne</em>, czyli takie, że dla \(\sigma \in s_n\) mamy \(\sigma(k_1, k_2,
+        \ldots, k_r) = (\sigma k_1, \sigma k_2, \ldots, \sigma k_r)\). Zacznijmy od znalezienia liczby punktów stałych.
+        Mamy:
+        \[
+          \sum_{\sigma \in s_n} |\textrm{fix}(\sigma)| = \sum_{k=0}^{n} p_{n,k} k^r
+        \]
+        Skąd wynika ten wzór? Jeśli permutacja ma \(k\) punktów stałych na zbiorze \(X\), to  każdy z tych punktów może
+        pojawić się na dowolnej pozycji w pojedynczej \(r\)-krotce, stanowiącej punkt stały na \(X^r\). Stąd
+        \(k^r\). Jeśli chodzi o orbity, mamy:
+        \[
+          n! \cdot |\textrm{Orb}_{s_n}(X)| = n! \cdot B_r,
+        \]
+        gdzie \(B_r\) jest \(r\)-tą liczbą Bella (liczbą podziałów \(r\)-zbioru na dowolną liczbę bloków).
+      </p>
+      <p>
+        Skąd wynika ten wzór? Rozważmy krotki postaci \((a, a, \ldots, a)\). Oczywiście przy dowolnej permutacji taka
+        krotka przejdzie na \((b, b, \ldots, b)\) – krotki z tym samym elementem na wszystkich \(r\) pozycjach
+        stanowią oddzielną orbitę i odpowiadają podziałowi \(r\)-zbioru na jeden blok.
+      </p>
+      <p>
+        Generalizując, \(r\) pozycji w krotce grupujemy w dowolny sposób. W każdej grupie znajdują się nierozróżnialne
+        elementy, które przy dowolnej permutacji przejdą na (inne lub te same) nierozróżnialne elementy. Ostatecznie, z
+        lematu Burnside'a, otrzymujemy szukany wzór:
+        \[
+          \sum_{k=0}^{n} k^r p_{n,k} = n! \cdot B_r
+        \]
+      </p>
+    </li>
+  </ul>
+  </div>
+</div>
+
 ---
 
 ### Zadanie 2
