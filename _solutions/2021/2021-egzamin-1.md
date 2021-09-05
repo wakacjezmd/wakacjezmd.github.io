@@ -108,3 +108,152 @@ Niech \\(\mathrm{fr}(x) = x− \lfloor x \rfloor\\) oznacza *część ułamkową
 ---
 
 ### Zadanie 4
+
+Oblicz, na ile istotnie różnych sposobów można rozmieścić \\(n\\) nieatakujących się wież na planszy \\(n \times n\\),
+jeśli utożsamimy takie rozmieszczenia, że jedno przechodzi na drugie:
+
+<ol type="a">
+  <li> przy obrocie planszy o \(180^\circ\); </li>
+  <li> przy <em>dowolnym</em> obrocie planszy. </li>
+</ol>
+
+<div data-collapse>
+  <h4 class="collapsible">Rozwiązanie</h4>
+  <div class="solution">
+    <ol type="a">
+      <li style="margin-bottom: 20px">
+        <p>
+        Dana jest grupa przekształceń \( G = \{ \textrm{id}, 180^\circ\} \). Stałymi elementami zbioru względem
+        przekształcenia \(\textrm{id}\) są oczywiście wszystkie spośród \(n!\) rozmieszczeń nieatakujących się wież.
+        </p>
+
+        <p>
+        Rozważmy przekształcenie \(180^\circ\).
+        </p>
+
+        <p>
+        <ul>
+        <li>
+            <p>
+            Gdy \(n\) jest nieparzyste, wówczas środkowy wiersz (i środkowa kolumna)
+            są <q>odbite</q> w centralnym elemencie, tzn. jeśli wieża jest na pozycji \(\big(\frac{n+1}{2}, k\big)\), to
+            jest również na pozycji \(\big(\frac{n+1}{2}, n-k+1\big)\). To znaczy, że jedynym <q>nieatakującym</q> ułożeniem
+            wieży w środkowym wierszu i w środkowej kolumnie jest \(\big(\frac{n+1}{2}, \frac{n+1}{2}\big)\).
+            </p>
+
+            <p>
+            Po umieszczeniu środkowej wieży, do rozmieszczenia pozostało jeszcze \(n-1\). Ułożenie \(\frac{n-1}{2}\) wież w
+            górnych wierszach wyznacza nam jednoznacznie ułożenie w dolnych wierszach. Należy uważać, by nie ułożyć
+            w tym samym czasie wieży w kolumnie \(k\)-tej i w kolumnie (\(n-k+1\))-szej; odbicie wymagane przez obrót
+            spowoduje wówczas kolizję.  Idąc kolumnami \(k=1\ldots \frac{n-1}{2}\), dla każdej wieży mamy do wyboru
+            \(\big(\frac{n-1}{2}, \frac{n-3}{2}, \ldots, 1\big)\) wierszy i (zawsze) dwie kolumny (tzn. \(k\)-tą i
+            \(n-k+1\)-szą), co daje nam w sumie:
+
+            \[
+                \textstyle  2^{(n-1)/2} \cdot \big( \frac{n-1}{2} \big)!
+            \]
+
+            punktów stałych przekształcenia \(180^\circ\) dla \(n\) nieparzystego.
+            </p>
+        </li>
+        <li style="margin-top: 20px">
+            <p>
+            Gdy \(n\) jest parzyste, sytuacja jest analogiczna jak w przypadku \(n\) nieparzystego, ale nie musimy
+            rozważać środkowego wiersza i środkowej kolumny (ponieważ środkiem obrotu będzie punkt pomiędzy dwoma
+            środkowymi wierszami i dwiema środkowymi kolumnami). Otrzymujemy:
+
+            \[
+                \textstyle 2^{n/2} \cdot \big(\frac{n}{2}\big)!
+            \]
+
+            rozmieszczeń.
+            </p>
+        </li>
+        </ul>
+        </p>
+
+        <p style="margin-top: 20px">
+        Obliczyliśmy, że: \(
+          \sum_{g \in G} \textrm{fix}(g) = n! + \textstyle 2^{\lfloor n/2 \rfloor} \big\lfloor\frac{n}{2}\big\rfloor!
+        \). Z lematu Burnside'a wiemy, że:
+
+        \[
+          \sum_{g \in G} \textrm{fix}(g) = 2 \cdot |\textrm{Orb}(X)|
+            \implies
+          |\textrm{Orb}(x)| = \frac{n! + \textstyle 2^{\lfloor n/2 \rfloor} \big\lfloor\frac{n}{2}\big\rfloor!}{2}
+        \]
+
+        gdzie orbity oznaczają liczbę nieizomoricznych rozmieszczeń względem grupy przekształceń.
+
+        </p>
+
+    </li>
+
+    <li>
+        <p>
+        Dana jest grupa przekształceń \( G = \{ \textrm{id}, 90^\circ, 180^\circ, 270^\circ\} \). Stałymi elementami
+        zbioru względem przekształcenia \(\textrm{id}\) są oczywiście wszystkie spośród \(n!\) rozmieszczeń
+        nieatakujących się wież. Przekształcenie \(180^\circ\) rozważyliśmy w poprzednim podpunkcie.
+        </p>
+
+        <p>
+        Rozważmy jednocześnie przekształcenie \(90^\circ\) i równoważne jemu pod względem orbit przekształcenie
+        \(270^\circ\). Rozważmy \(n\)-planszę taką, że \(2 \mid n\). Ponumerujmy planszę, jak poniżej.
+        </p>
+
+        <p style="margin-top:30px; margin-bottom: 30px">
+        <img src="/images/2021_4_b.svg" style="display:block; margin-left:auto; margin-right:auto; width:50%">
+        </p>
+
+        <p>
+        Odnotujmy, że jeśli na polu \((a,b)\) zostanie postawiona wieża, to nie może ona pojawić się na żadnym z pól
+        \((a,\star), (\star, b), (b, \star), (\star, a)\) (gdzie \(\star\) to dowolny element). Wieże nie zbijają się za
+        to, gdy stoją na polach \((k_1, k_2), (k_3, k_4), \ldots, \big(k_{\lfloor\frac{n}{4}\rfloor-1},
+        k_{\lfloor\frac{n}{4}\rfloor}\big)\), gdzie \(k_1 \neq k_2 \neq \ldots \neq k_{\lfloor\frac{n}{4}\rfloor}\).
+        </p>
+
+        <p>
+        Widać jasno, że jeśli \(4 \not\mid n\), to nie uda się rozstawić \(n\) wież, bo każda wieża pojawia się
+        \(4\) razy. W przeciwnym wypadku wzór na liczbę unikalnych rozstawień wież wynosi:
+
+        \[
+            \frac{(n/2)!}{(n/4)!}
+        \]
+
+        To znaczy, permutujemy \(n!\) elementów, łączymy je w pary po dwa, i usuwamy powtarzające się pogrupowania
+        (tzn. dzielimy liczbę permutacji elementów przez liczbę permutacji par).
+        </p>
+
+        <p>
+        W przypadku gdy \(2 \not\mid n\), na polu \(\frac{n-1}{2}\) musi pojawić się wieża. Wówczas
+        sytuacja jest zupełnie analogiczna jak w przypadku parzystym, tzn. możliwych jest:
+
+        \[
+            \frac{\big(\frac{n-1}{2}\big)!}{\big(\frac{n-1}{4}\big)!}
+        \]
+
+        rozstawień, gdy \(4 \mid (n-1)\). Dla wygody notacyjnej zdefiniujmy:
+
+        <ul>
+        <li style="margin-bottom: 7px"> \(P_{1}(n) = n!\) </li>
+        <li style="margin-bottom: 7px"> \(P_{2}(n) = 2^{n/2} \big( \frac{n}{2} \big)!\) </li>
+        <li style="margin-bottom: 7px"> \(P_{3}(n) = \frac{(n/2)!}{(n/4)!}\) </li>
+        </ul>
+
+        I dalej mamy:
+
+        \[
+            |\textrm{Orb}(x)| = \frac{1}{4} \cdot
+                \begin{cases}
+                  P_1(n) + P_2(n) + 2P_3(n)       &\text{gdy $n \equiv 0 \mod 4$} \\[3pt]
+                  P_1(n) + P_2(n-1) + 2P_3(n-1)   &\text{gdy $n \equiv 1 \mod 4$} \\[3pt]
+                  P_1(n) + P_2(n)                 &\text{gdy $n \equiv 2 \mod 4$} \\[3pt]
+                  P_1(n) + P_2(n-1)               &\text{gdy $n \equiv 3 \mod 4$} \\[3pt]
+                \end{cases}
+        \]
+        </p>
+
+    </li>
+    </ol>
+  </div>
+</div>
