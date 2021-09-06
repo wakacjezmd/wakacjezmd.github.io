@@ -16,9 +16,9 @@ jako podgraf.
 <div data-collapse>
   <h4 class="collapsible">Rozwiązanie</h4>
   <div class="solution">
-  <em>Fun fact: </em>ktoś z MIMu zadał w wakacje 2020 roku <a href="https://math.stackexchange.com/q/3793447">pytanie o
-  to zadanie</a> na <code>math.stackexchange</code> (i nie wrzucił treści ani odpowiedzi na <code>wakacjezmd</code>)!
-  Shame on you, <code>maciek259</code>.
+  <em>Fun fact: </em>ktoś (pewnie z MIMu) zadał w wakacje 2020 roku
+  <a href="https://math.stackexchange.com/q/3793447">pytanie o to zadanie</a>
+  na <code>math.stackexchange</code>.
   </div>
 </div>
 
