@@ -68,7 +68,9 @@ Udowodnij, że współczynnikiem \\(x^k\\) w rozwinięciu \\((1+x+x^2+x^3)^n\\) 
 
 ### Zadanie 3
 
-Niech \\(\mathrm{fr}(x) = x− \lfloor x \rfloor\\) oznacza *część ułamkową* liczby rzeczywistej \\(x\\). Oblicz (bez wspomagania komputerowego) \\(\mathrm{fr}(998!/101^{10})\\).
+Niech \\(\mathrm{fr}(x) = x− \lfloor x \rfloor\\) oznacza *część ułamkową*
+liczby rzeczywistej \\(x\\). Oblicz (bez wspomagania komputerowego)
+\\(\mathrm{fr}(998!/101^{10})\\).
 
 <div data-collapse>
   <h4 class="collapsible">Rozwiązanie</h4>
