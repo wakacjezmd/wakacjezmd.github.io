@@ -31,4 +31,37 @@ przy czym kolejność składników w tym przedstawieniu jest istotna
 Udowodnij, że uporządkowanych podziałów liczby \\(n\\) na składniki \\( \le 2 \\) jest tyle samo, co
 uporządkowanych podziałów liczby \\(n+2\\) na składniki \\( \ge 2 \\).
 
+<div data-collapse>
+  <h4 class="collapsible">Rozwiązanie</h4>
+  <div class="solution">
+    <p>
+      Aby uzyskać wszystkie podziały \(n\) na składniki \( \le 2 \), możemy do każdego
+      podziału \( n-1 \) dostawić na koniec składnik \( 1 \), a do każdego
+      podziału \( n-2 \) dostawić na koniec składnik \( 2 \). To przejście jest
+      wzajemnie jednoznaczne, bo każdy poprawny podział \( n \) będzie miał ostatni
+      składnik równy \( 1 \) albo \( 2 \) (pozostałe składniki tworzą wówczas podział
+      liczby odpowiednio \( n-1 \) albo \( n-2 \)).
+
+      Stąd otrzymujemy wzór \( a_n = a_{n-1} + a_{n-2} \), co z warunkami brzegowymi
+      \( a_1 = 1, a_2 = 2 \) daje nam \( a_n = F_{n+1} \), gdzie \( F_n \) to ciąg
+      Fibbonacciego.
+    </p>
+    <p>
+      Aby uzyskać wszystkie podziały \( n+2 \) na składniki \( \ge 2 \), możemy do każdego
+      podziału \( n \) dostawić składnik \( 2 \), do każdego
+      podziału \( n-1 \) dostawić składnik \( 3 \) i tak aż do \( n=0 \),
+      gdzie do \( 2 \) dostawiamy składnik \( n \). Dodajemy jeszcze jeden podział z
+      samotnym składnikiem \( n+2 \). To przejście jest wzajemnie jednoznaczne, bo każdy
+      poprawny podział \( n+2 \) będzie miał ostatni składnik równy \( 2 \) lub więcej.
+
+      Stąd otrzymujemy wzór \( a_n = a_{n-2} + a_{n-3} + \ldots + a_{1} + a_{0} + 1 \) z
+      warunkami brzegowymi \( a_0 = 1, a_1 = 1 \).
+    </p>
+    <p>
+      Pozostało pokazać, że drugi wzór rekurencyjny jest równoważny pierwszemu.
+      Pozostawiamy to jako proste ćwiczenie na indukcję.
+    </p>
+  </div>
+</div>
+
 ---

@@ -11,6 +11,7 @@ trzeba ściągnąć Ruby i wpisać:
 
 ```sh
 (sudo) gem install jekyll
+(sudo) gem install webrick
 ```
 
 Po wprowadzeniu zmian w repozytorium dobrze jest włączyć `jekyll serve`
