@@ -28,7 +28,7 @@ Rozwiąż równanie rekurencyjne:
 
 <p>
 Podział liczby nazywamy <em>binarnym</em>, jeśli wszystkie jego składniki są potęgami dwójki, na przykład
-liczba 5 ma 4 podziały binarne: \(1+1+1+1+1\), \(1+1+1+2\), \(1+2+2\), (\1+4\).
+liczba 5 ma 4 podziały binarne: \(1+1+1+1+1\), \(1+1+1+2\), \(1+2+2\), \(1+4\).
 </p>
 <p>
 Udowodnij, że dokładnie połowa spośród podziałów binarnych \(n \geq 2\) ma parzystą liczbę składników.
