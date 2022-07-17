@@ -27,7 +27,11 @@ jest określony zależnością:
     \sum_{i=0}^{3n} a_i x^i = (1+x+x^2+x^3)^n
 \\]
 
-Uprość wyrażenie \\(\sum_{i=0}^{k} (-1)^i a_{k-1} \binom{n}{i}\\).
+Uprość wyrażenie \\(\sum_{i=0}^{k} (-1)^i a_{k-i} \binom{n}{i}\\).
+
+<div>
+  <h4 class="collapsible"><a href="/downloads/2021_egzamin2_2.pdf">Rozwiązanie (link)</a></h4>
+</div>
 
 ---
 
