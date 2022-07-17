@@ -41,8 +41,12 @@ Udowodnij, że dokładnie połowa spośród podziałów binarnych \(n \geq 2\) m
 <div>
 
 Udowodnij, że funkcja \(f: \mathbb{N}_{+} \rightarrow \mathbb{N}_{+}\) określona wzorem \(f(n) = n \cdot \phi(n)\)
-(gdzie \(\phi(n)\) to funkcja Eulera jest różnowartościowa.
+(gdzie \(\phi(n)\) to funkcja Eulera) jest różnowartościowa.
 
+</div>
+
+<div>
+  <h4 class="collapsible"><a href="https://math.stackexchange.com/questions/539558">Rozwiązanie (link)</a></h4>
 </div>
 
 ### Zadanie 4
