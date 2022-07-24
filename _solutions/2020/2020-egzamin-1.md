@@ -19,7 +19,7 @@ liczbę spacerów złożonych z \(n\) kroków, które zaczynają się i kończą
   <div class="solution">
     <p>
       <p>
-        Zauważmy, że ciąg złożny z \(L, P, G, D\) jest spacerem wtedy i tylko wtedy, gdy \(\#L\) = \(\#P\) oraz \(\#G\) = \(\#D\). Dzieje się tak, bo żeby zacząć i skończyć w \(0, 0\) potrzebujemy tyle samo skrętów w prawo co lewo itd. 
+        Zauważmy, że ciąg złożny z \(L, P, G, D\) jest spacerem wtedy i tylko wtedy, gdy \(\#L\) = \(\#P\) oraz \(\#G\) = \(\#D\). Dzieje się tak, bo żeby zacząć i skończyć w \((0, 0)\) potrzebujemy tyle samo skrętów w prawo co lewo itd. 
       </p>
       <p>
         <em>Zliczanie</em>: 
@@ -59,7 +59,7 @@ liczbę spacerów złożonych z \(n\) kroków, które zaczynają się i kończą
       </p>
 
       <p>
-        \(\#G = x \)(Bo na \(\frac{n}{2}\) coś stoi z pierwszego wyboru, wiemy, że \(x\) się pokrywa z drugim, czyli z drugiego wyboru mamy \(\frac{n}{2} - x\) nowych miejsc [niepokrywających się z pierwszym wyborem]. Czyli \(\frac{n}{2} + \frac{n}{2} - x \) to liczba miejsc, na którym coś stoi. Odejmujemy od \(n\), żeby otrzymać liczbę miejsc pustych i wychodzi \(x\)).
+        \(\#G = x \) (Bo na \(\frac{n}{2}\) coś stoi z pierwszego wyboru, wiemy, że \(x\) się pokrywa z drugim, czyli z drugiego wyboru mamy \(\frac{n}{2} - x\) nowych miejsc [niepokrywających się z pierwszym wyborem]. Czyli \(\frac{n}{2} + \frac{n}{2} - x \) to liczba miejsc, na którym coś stoi. Odejmujemy od \(n\), żeby otrzymać liczbę miejsc pustych i wychodzi \(x\)).
       </p>
 
       <p>
@@ -75,13 +75,13 @@ liczbę spacerów złożonych z \(n\) kroków, które zaczynają się i kończą
 
       Z pierwszego wyboru niech wszystkie \(L\) padną na pozycję z \(A\). To ustawia wszystkie \(L\) jak trzeba.
 
-      Z drugiego, niech \(\|D\|\) \(P\) padnie na pozycję z \(D\). To ustawia wszystkie \(D\) jak trzeba
+      Z drugiego, niech \(\|D\|\) \(P\) padnie na pozycję z \(D\). To ustawia wszystkie \(D\) jak trzeba. 
 
       Pozostałe \(P\) z drugiego wybour \((\frac{n}{2} - \|D\|\)) niech padną na puste pozycje. To ustawia \(P\) i zarazem \(G\).
     </p>
 
     <p>
-      <em>Różnowartościowość wyboru</em>:
+      <em>Różnowartościowość wyboru:</em>
       Tabelka zdefiniowana na początku pozwala uzyskać dany skręt na dokładnie jeden sposób, więc dwa różne wybory muszą dać różne podziały.
     </p> 
 
