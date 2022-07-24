@@ -14,7 +14,86 @@ liczbę spacerów złożonych z \(n\) kroków, które zaczynają się i kończą
 \((0,0)\).
 </div>
 
----
+<div data-collapse>
+  <h4 class="collapsible">Rozwiązanie</h4>
+  <div class="solution">
+    <p>
+      <p>
+        Zauważmy, że ciąg złożny z \(L, P, G, D\) jest spacerem wtedy i tylko wtedy, gdy \(\#L\) = \(\#P\) oraz \(\#G\) = \(\#D\). Dzieje się tak, bo żeby zacząć i skończyć w \(0, 0\) potrzebujemy tyle samo skrętów w prawo co lewo itd. 
+      </p>
+      <p>
+        <em>Zliczanie</em>: 
+        Wybierzmy połowę miejsc. W wybrane miejsca wstawmy \(L\). Ponownie wybierzmy połowę miejsc (z \(n\) - miejsca z dwóch wyborów mogą się pokrywać). W wybrane miejsca wstawiamy \(P\). Wybór miejsc rozumiemy podług tej tabelki (pierwsze miejsce reprezentuje pierwszy wybór, drugie - analogicznie):
+        </p>
+        <p>
+          \(\_P = P\)
+        </p>
+        <p>
+          \(LP = D\)
+        </p>
+          \(\_\_ = G\)
+        <p>
+          \(L\_ = L\)
+        </p>
+
+      <p>
+        Czyli na przykład: \(n = 4\), pierwszy wybór: \(L\_L\_\). Drugi wybór: \(PP\_\_\). Sumarycznie: \(DPLG\).
+
+        Twierdzę, że takie wybory zliczają spacery.
+      </p>
+
+    <p>
+      <em>Prawidłowość wyboru</em>:
+
+      \(n\) dowolne, z pierwszego wyboru mamy \(\frac{n}{2}\) \(L\), z drugiego \(\frac{n}{2}\) \(P\). Niech \(x\) to będzie liczba pokrywających się miejsc. Policzmy teraz liczbę poszczególnych kierunków:
+      <p>
+        \(\#L = \frac{n}{2} - x \) (\(\frac{n}{2}\) było na starcie, zabieramy \(x\), bo tyle się pokrywa)
+      </p>
+
+      <p>
+        \(\#P = \frac{n}{2} - x\) (Skoro po drugim wyborze \(x\) miejsc się pokrywa, a wybieraliśmy z \(\frac{n}{2}\), to na \(\frac{n}{2} - x \) stoi samo \(P\))
+      </p>
+
+      <p>
+        \(\#D = x\) (Bo \(x\) się pokrywa)
+      </p>
+
+      <p>
+        \(\#G = x \)(Bo na \(\frac{n}{2}\) coś stoi z pierwszego wyboru, wiemy, że \(x\) się pokrywa z drugim, czyli z drugiego wyboru mamy \(\frac{n}{2} - x\) nowych miejsc [niepokrywających się z pierwszym wyborem]. Czyli \(\frac{n}{2} + \frac{n}{2} - x \) to liczba miejsc, na którym coś stoi. Odejmujemy od \(n\), żeby otrzymać liczbę miejsc pustych i wychodzi \(x\)).
+      </p>
+
+      <p>
+        Czyli ten sposób zawsze wybiera prawidłowe spacery.
+      </p>
+
+    </p>
+
+    <p>
+      <em>Zlicza każdy spacer</em>:
+
+      Niech \(S\) będzie dowolnym spacerem z zadania. \(A, B, C, D\) to odpowiednio zbiory pozycji \(L, P, G, D\) tego spaceru.
+
+      Z pierwszego wyboru niech wszystkie \(L\) padną na pozycję z \(A\). To ustawia wszystkie \(L\) jak trzeba.
+
+      Z drugiego, niech \(\|D\|\) \(P\) padnie na pozycję z \(D\). To ustawia wszystkie \(D\) jak trzeba
+
+      Pozostałe \(P\) z drugiego wybour \((\frac{n}{2} - \|D\|\)) niech padną na puste pozycje. To ustawia \(P\) i zarazem \(G\).
+    </p>
+
+    <p>
+      <em>Różnowartościowość wyboru</em>:
+      Tabelka zdefiniowana na początku pozwala uzyskać dany skręt na dokładnie jeden sposób, więc dwa różne wybory muszą dać różne podziały.
+    </p> 
+
+    <p>
+      <em> Wzór:  </em>
+        <p>
+          Dwa razy wybieramy połowę z \(n\): \(\binom{n}{\frac{n}{2}}^2\)
+        </p>
+    </p>
+  </p>
+  </div>
+</div>
 
 ### Zadanie 2
 
