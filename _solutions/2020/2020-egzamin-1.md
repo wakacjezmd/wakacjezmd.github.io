@@ -134,7 +134,34 @@ Udowodnij, że \((\prod_{x \in X_n} x) \equiv 1 \bmod n\).
 </p>
 </div>
 
----
+<div data-collapse>
+  <h4 class="collapsible">Rozwiązanie</h4>
+  <div class="solution">
+    <p>
+      Pokażemy, że każdy element w \(X_n\) ma także w tym zbiorze swoją odwrotność multiplikatywną \(\bmod n\). Korzystamy z faktu, że jeśli odwrotność multiplikatywna istnieje, to istnieje dokładnie jedna, unikalna dla każdego elementu.
+    </p>
+    <p>
+      Niech \(a\in X_n\). Oczywiście \(a \perp n\). Jest to warunek konieczny i wystarczający istnienia odwrotności multiplikatywnej \(a\). Pokażemy, że \(a^{-1} \in X_n\).
+    </p>
+    <p>
+      <p>
+        <em> Czy  \(a^{-1} \perp n\)? </em>
+      </p>
+      Załóżmy, że tak nie jest. Oznacza to, że istnieje takie \(p\), że \(p \mid n \wedge p \mid a^{-1}\).
+      Ale z definicji odwrotności mamy: \(aa^{-1} \equiv 1 \bmod n\). Ta kongruencja znaczy tyle co: \(n \mid aa^{-1}-1\).
+      Jednak \(p \mid n\), ale \(p \nmid aa^{-1} -1\) - sprzeczność. Oznacza to, że takie \(p\) nie może istnieć.
+    </p>
+    <p>
+      <em> Czy  \(a^{-1}+1 \perp n\)? </em>
+    </p>
+    <p>
+      Wiemy, że \(a+1 \perp n\) oraz \(a^{-1} \perp n\). Zachodzi także \((a+1)(a^{-1}) \perp n\). Ta własność to nic innego jak: \(NWD(aa^{-1}+a^{-1}, n) = 1\). Z własności \(NWD\), możemy wziąć pierwszy argument modulo drugi, nie zmieniając wyniku: \(NWD(aa^{-1}+a^{-1}, n) = NWD(1+a^{-1}, n) = 1\). Czyli \(a^{-1} + 1 \perp n\).
+    </p>
+    <p>
+      Pokazaliśmy, że dla dowolnego elementu z \(X_n\), jego odwrotność także należy do tego zbioru. Możemy teraz połączyć każdy element z jego odwrotnością, co daje \(1\) licząc modulo \(n\). Finalnie mamy iloczyn samych jednynek modulo \(n\), co kończy zadanie.
+    </p>
+  </div>
+</div>
 
 ### Zadanie 4
 
