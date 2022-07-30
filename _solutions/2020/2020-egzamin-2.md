@@ -15,7 +15,7 @@ dodatnią liczbą naturalną. Udowodnij tożsamość:
 \\]
 
 <div data-collapse>
-  <h4 class="collapsible">Rozwiązanie</h4>
+  <h4 class="collapsible">Rozwiązanie (trudniejsze)</h4>
   <div class="solution">
   <p>
     Zadanie z gatunku tych raczej trudniejszych, niż prostszych &#x1F605;.
@@ -77,6 +77,41 @@ dodatnią liczbą naturalną. Udowodnij tożsamość:
       </p>
     </li>
   </ul>
+  </div>
+</div>
+
+<div data-collapse>
+  <h4 class="collapsible">Rozwiązanie (prostsze)</h4>
+  <div class="solution">
+
+    Zliczamy pary \(n-\)permutacji oraz \(r-\)ciągów z powtórzeniami puntków stałych permutacji. 
+    <p>
+      <em> Lewa strona: </em>
+      <br>
+      Dla każdej permutacji mamy dokładnie \(k^r\) ciągów.
+    </p>
+    <p>
+      <em> Prawa strona: </em>
+      <br>
+      Najpierw wybieramy ciąg punktów stałych. Robimy to poprzez podzielenie \(r\) na \(t\) bloków. Miejsca w tym samym bloku będą zajętę przez ten sam punkt stały, bloki są parami zajęte przez różne punkty stałe.
+      Bloki możemy uzyskać na \(r \brace t\) sposobów. Pozostaje wybrać owe punkty stałe. Jest ich oczywiście \(t\), każdy może być dowolny, ale wszystkie mają być parami różne, więc: \((n)*(n-1)*(...)*(n-t+1)\) (wybrane bloki dostają punkty stałej w następującej kolejnośći: najwcześniej zaczynając się blok dostaje pierwszy wybór z iloczynu, drugi po nim drugi z iloczynu i tak dalej).
+      Permutację konstruujemy tak: jej punkty stałe już wybraliśmy, pozostaje elementy możemy ułożyć na \((n-t)!\) sposobów.
+      <p> 
+        Dwa różne wyżej opisane wybory dadzą dwie różne pary. Jeśli dwa ciągi są sobie równe, to znaczy, że musiały zostać podzielone na te same bloki. 
+        Ponadto punkty stały w obydwu ciągach musiały zostać wybrane także te same w tej samej kolejności. Finalnie sam ciąg musiał także zostać dopełniony w ten sam sposób: wybory były więc identyczne.
+        Nietrudno zauważyć, że te wybory pozwalają uzyskać dowolną parę (pamiętajmy, że permutacja ma co najmniej tyle punktów stałych, ile jest różnych wartości w ciągu).
+      </p>
+      <p>
+        <em> Przykład: </em>
+        <br>
+        \(r=4, t=2, n=10\).
+        Dzielimy na przykład tak: \(ABAB\). Wybieramy dwa punkty stałe (bo \(t=2\)): \(2, 8\). Mamy już ciąg: \(2828\). 
+        W permutacji mamy wybrane punkty stałe, następnie dobieramy permutację reszty elementów: \([1,5][2][3,6][4][7,9][8][10]\). 
+      </p>
+      
+    </p>
+
+
   </div>
 </div>
 
