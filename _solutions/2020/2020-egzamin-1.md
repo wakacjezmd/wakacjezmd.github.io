@@ -14,6 +14,14 @@ liczbę spacerów złożonych z \(n\) kroków, które zaczynają się i kończą
 \((0,0)\).
 </div>
 
+
+<div data-collapse>
+  <h4 class="collapsible">Wskazówka wakacyjna</h4>
+  <div class="tip">
+    Zadanie da się zrobić interperetacją, w której dwukrotnie wybiera się te samą liczbę. W interpretacji nie ma żadnego sumowania.
+  </div>
+</div>
+
 <div data-collapse>
   <h4 class="collapsible">Rozwiązanie</h4>
   <div class="solution">
@@ -132,6 +140,13 @@ Niech \(n\) będzie dodatnią liczbą nieparzystą i niech
 <p style="margin-bottom: 15px">
 Udowodnij, że \((\prod_{x \in X_n} x) \equiv 1 \bmod n\).
 </p>
+</div>
+
+<div data-collapse>
+  <h4 class="collapsible">Wskazówka wakacyjna</h4>
+  <div class="tip">
+    Zastanów się nad odwrotnościami multiplikatywnymi modulo \(n\).
+  </div>
 </div>
 
 <div data-collapse>
