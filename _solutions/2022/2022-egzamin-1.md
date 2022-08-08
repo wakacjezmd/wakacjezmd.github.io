@@ -22,6 +22,43 @@ Rozwiąż równanie rekurencyjne:
 
 </div>
 
+<div data-collapse>
+  <h4 class="collapsible">Wskazówka wakacyjna</h4>
+  <div class="tip">
+    Policz kilka pierwszych wartości tej sumy. 
+  </div>
+</div>
+
+<div data-collapse>
+  <h4 class="collapsible">Rozwiązanie</h4>
+  <div class="solution">
+    <p>
+      Po policzeniu kilku pierwszych wartości tej sumy, stawiamy tezę, że wartość tej sumy dla każdego \(n\) wynosi jeden. Dowodzimy tę tezę indukcją.
+    </p>
+    <p>
+      Zakładamy, że dla każdego \(n, a_n = 1\) (indukcja zupełna). Baza jest oczywista.
+    </p>
+    <p>
+      Musimy pokazać, że \(a_{n+1} = \frac{1}{6}(n+2)(n+3) - \frac{1}{3} 
+      \sum_{\substack{0 \leq i,j < n+1,\\1 \leq i+j \leq n+1}} a_i a_j a_{n+1-i-j}=1\). Zauważmy, że największy indeks ciągu \(a_n\), jaki pojawia
+      się w tej sumie to \(n\). Z założenia każdy element tej sumy wynosi jeden, a więc jej wartość to liczba jej elementów. Policzymy tę liczbę analizując ile jest elementów dla \(i=0,1,...,n\). Innymi słowy, liczymy ile par \(i, j\) spełnia warunek pod sumą.
+    </p>
+    <p>
+      \(i=0\). Wtedy \(j\) przebiega \(n\) elementowy zakres \(1,...,n\).
+    </p>
+    <p>
+      \(i>0\). Wtedy \(j\) przebiega \(n+1-i+1\) elementowy zakres \(0,1,...,n-i+1\).
+    </p>
+    <p>
+      Wartość sumy w \(a_{n+1}\) to suma liczb elementów wszystkich zakresów: \(n+\frac{n+1+2}{2}n=\frac{n^2+5n}{2}\) (Dla \(i>0\) sumujemy ciąg arytmetyczny o wzorze \(n+2-i\)).
+      <p>
+      Wykonajmy teraz rachunki:
+      \(a_{n+1}=\frac{1}{6}(n^2+5n+6) - \frac{1}{3}(\frac{n^2+5n}{2})=\frac{n^2+5n+6}{6}-\frac{n^2+5n}{6}=1\)
+      </p>
+    </p>
+  </div>
+</div>
+
 ### Zadanie 2
 
 <div>
@@ -42,6 +79,13 @@ Udowodnij, że dokładnie połowa spośród podziałów binarnych \(n \geq 2\) m
 
 Udowodnij, że funkcja \(f: \mathbb{N}_{+} \rightarrow \mathbb{N}_{+}\) określona wzorem \(f(n) = n \cdot \phi(n)\)
 (gdzie \(\phi(n)\) to funkcja Eulera) jest różnowartościowa.
+
+<div data-collapse>
+  <h4 class="collapsible">Wskazówka wakacyjna</h4>
+  <div class="tip">
+    Funkcja \(f\) jest multiplikatywna. 
+  </div>
+</div>
 
 </div>
 
