@@ -27,6 +27,12 @@ permalink: /2017/egzamin/1/
   liczby \(x\). <i> Wskazówka: </i> Rozważ rząd elementu \(2\) w \(\mathbb{Z}_{t(m)}^*\).
 </p> 
 
+<div data-collapse>
+  <h4 class="collapsible">Wskazówka wakacyjna</h4>
+  <div class="tip">
+    \(\mathbb{Z}_{t(m)}^*\) to nic innego jak grupa multiplikatywna modulo \(t(m)\). Jej elementy to liczby względnie pierwsze z \(t(m)\), działanie grupowe to mnożenie modulo. Zastanów się co dzieli się przez rząd elementu \(2\). 
+  </div>
+</div>
 
 <div data-collapse>
   <h4 class="collapsible">Rozwiązanie</h4>
