@@ -52,13 +52,8 @@ permalink: /2017/egzamin/1/
   wystąpić przynajmniej raz. Oblicz, na ile istotnie różnych sposobów można to zrobić, jeśli dwie macierze utożsamiamy, gdy jedną można otrzymać z drugiej strony przez pewną permutację wierszy i/lub kolumn.
 </p> 
 
-<div data-collapse>
-  <h4 class="collapsible">Rozwiązanie</h4>
-  <div class="solution">
-    <p>
-      Rozwiązanie jest dostępne <a href="https://math.stackexchange.com/questions/2113657/burnsides-lemma-applied-to-grids-with-interchanging-rows-and-columns">tutaj</a>.
-    </p>
-  </div>
+<div>
+  <h4 class="collapsible"><a href="https://math.stackexchange.com/questions/2113657/burnsides-lemma-applied-to-grids-with-interchanging-rows-and-columns">Rozwiązanie (link)</a></h4>
 </div>
 
 ---
