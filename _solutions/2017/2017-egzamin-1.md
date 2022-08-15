@@ -27,19 +27,25 @@ permalink: /2017/egzamin/1/
   liczby \(x\). <i> Wskazówka: </i> Rozważ rząd elementu \(2\) w \(\mathbb{Z}_{l(m)}^*\).
 </p> 
 
+<div data-collapse>
+  <h4 class="collapsible">Wskazówka wakacyjna</h4>
+  <div class="tip">
+    \(\mathbb{Z}_{t(m)}^*\) to nic innego jak grupa multiplikatywna modulo \(t(m)\). Jej elementy to liczby względnie pierwsze z \(t(m)\), działanie grupowe to mnożenie modulo. Zastanów się co dzieli się przez rząd elementu \(2\). 
+  </div>
+</div>
 
 <div data-collapse>
   <h4 class="collapsible">Rozwiązanie</h4>
   <div class="solution">
     <p>
-		Najpierw zauważmy, że \(m\) jest nieparzyste, więc \(l(m)\) też musi być.
-		Stąd wiemy, że \(2 \in \mathbb{Z}_{l(m)}^* \).
-		Oznaczmy rząd \(2\) w tej grupie jako \(o\).
-		Z małego tw. Fermata mamy dzięki temu, że \(o|l(m)-1\).
-		Zatem \(o < l(m)\).
-		Skoro \(m | 2^n-1\), to także \(l(m) | 2^n-1\), czyli \(2^n \equiv 1 \bmod l(n) \).
-		To oznacza z kolei, że \(o|n\) z definicji rzędu elementu.
-		Wiemy teraz, że o jest dzielnikiem n i \(o < l(m)\), zatem najmniejszy dzielnik \(n\) też musi spełniać tę nierówność.
+		Najpierw zauważmy, że \(m\) jest nieparzyste, więc \(l(m) \neq 2\).
+		Stąd \(2 \in \mathbb{Z}_{l(m)}^* \).
+		Oznaczmy rząd \(2\) w tej grupie jako \(r\).
+		Z twierdzenia Lagrange'a \(r \mid l(m)-1\).
+		Zatem \(r < l(m)\).
+		Skoro \(m \mid 2^n-1\), to także \(l(m) \mid 2^n-1\), czyli \(2^n \equiv 1 \bmod l(m) \).
+		To oznacza z kolei, że \(r \mid n\), gdyż \(r\) jest rzędem \(2\) (patrz definicja rzędu).
+		Zachodzi teraz taka nierówność: \(l(n) \leq r < l(m)\), gdyż \(r\) jest dzielnikiem \(n\), a \(l(n)\) to najmniejsza liczba pierwsza w rozkładzie \(n\).
     </p>
   </div>
 </div>
