@@ -13,7 +13,7 @@ istotna (np. wszystkie 3-kompozycje to: \\( 1 + 1 + 1, 1 + 2, 2 + 1, 3 \\)). Zna
 liczbę n-kompozycji, w których <em>liczba składników parzystych jest parzysta.</em>
 
 <div data-collapse>
-  <h4 class="collapsible">Rozwiązanie</h4>
+  <h4 class="collapsible">Rozwiązanie I (dłuższe)</h4>
   <div class="solution">
     <p>
       Rozważmy następujący sposób generowania n-kompozycji.
@@ -56,6 +56,25 @@ liczbę n-kompozycji, w których <em>liczba składników parzystych jest parzyst
 	  Ostatecznie liczba n-kompozycji, w których liczba składników parzystych jest parzysta wynosi
 	  \( 2^{n - 2} \) dla \( n &gt; 1 \) i \( 1 \) dla \( n = 1 \).
     </p>
+  </div>
+</div>
+
+<div data-collapse="">
+  <h4 class="collapsible">Rozwiązanie II (krótsze)</h4>
+  <div class="solution">
+	<p>
+		Zauważmy, że ogólnie wszystkich n-kompozycji jest \(2^{n-1}\). Wystarczy wyobrazić sobie \(n\) piłek, pomiędzy każdą piłkę możemy włożyć przegródkę: dowolne ułożenie \(\leq n-1\) przegródek definuje kompozycję. 
+	</p>
+	<p>
+		Niech Dobra Kompozycja, to kompozycja, której liczba składników parzystych jest parzysta, a z kolei kompozycja z nieparzystą liczbą składników parzystych będzie Złą kompozycją. Oczywiście zbiory Dobrych i Złych kompozycji są rozłączne, a ich suma to po prostu wszystkie n-kompozycje. 
+		Pokażę, że istnieje bijekcja pomiędzy Dobrymi a Złymi kompozycjami.
+	</p>
+	<p>
+		Weźmy Dobrą kompozycję: jeśli jej pierwszy element jest jedynką to dołączamy go do drugiego elementu; jeśli jest różny od jeden, to zabieramy z niego jedynkę i dodajemy ją jako nowy element na sam początek kompozycji. Łatwo widać, że ta operacja jest różnowartościowa, a przez to także na.  
+	</p>
+	<p>
+		Skoro istnieje bijekcja pomiędzy Dobrymi kompozycjami a Złymi, to jest ich tyle samo, a skoro razem jest ich \(2^{n-1}\), to Dobrych jest \(2^{n-2}\) dla \(n>1\).
+	</p>
   </div>
 </div>
 
