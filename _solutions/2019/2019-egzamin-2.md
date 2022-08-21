@@ -7,7 +7,7 @@ permalink: /2019/egzamin/2/
 
 ### Zadanie 1
 
-Niech $$ a_n $$ oznacza liczbę prostokątów o niezerowym polu, bokach równolegaych do osi układu współrzędnych i wierzchołkach należących do zbioru $$ \{(x, y) \in \mathbb{N} : 0 \leq x + y \leq n+1\} $$ (np. $$a_0=0,a_1 = 1, a_2 = 5 $$ ). Znajdź funkcję tworzącą i zwarty wzór na $$ a_n $$.
+Niech $$ a_n $$ oznacza liczbę prostokątów o niezerowym polu, bokach równoległych do osi układu współrzędnych i wierzchołkach należących do zbioru $$ \{(x, y) \in \mathbb{N}^2 : 0 \leq x + y \leq n+1\} $$ (np. $$a_0=0,a_1 = 1, a_2 = 5 $$ ). Znajdź funkcję tworzącą i zwarty wzór na $$ a_n $$.
 
 
 ---
