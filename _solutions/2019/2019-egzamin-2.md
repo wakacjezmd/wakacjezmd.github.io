@@ -3,7 +3,7 @@ layout: page
 permalink: /2019/egzamin/2/
 ---
 
-## 2019 Egzamin - Pierwszy poprawkowy
+## 2019 Egzamin poprawkowy
 
 ### Zadanie 1
 
