@@ -5,19 +5,37 @@ permalink: /2016/egzamin/2/
 
 ## 2016 Egzamin poprawkowy
 
-![Treść zadań z drugiego egzaminu 2015/2016.](http://i.imgur.com/wXxtskpg.jpg).
-
 ### Zadanie 1
+<p>
+  Oblicz \(\sum_{k=0} ^n \binom{2n+1}{2k+1}2^{3k} \bmod 5\).
+</p>
 
 ---
 
 ### Zadanie 2
+<p>
+  <p>
+    Dla ustalonego podziału \(\pi\) liczby \(n\), niech \(A(\pi)\) oznacza liczbę jedynek w \(\pi\), zaś \(B(\pi)\) — liczbę różnych składników w \(\pi\).
+  </p>
+  <p>
+    PRZYKŁAD: dla podziału \(pi: 1 + 1 + 2 + 2 + 2 + 4\) mamy \(A(\pi)=2\) oraz \(B(\pi)=3\).
+  </p>
+  <p>
+    Udowodnij, że \(\sum_{\pi} A(\pi) = \sum_{\pi} B(\pi)\), gdzie sumowanie odbywa się po wszystkich podział ustalonej liczby \(n\).
+  </p>
+  <p>
+    WSKAZÓWKA: Spróbuj wyrazić każdą ze stron tożsamości przez \(P(1), P(2), \dots, P(n-1)\), gdzie \(P(k)\) to łączna liczba
+    podziałów liczby \(k\).
+  </p>
+</p>
 
 ---
 
 ### Zadanie 3
 
-Udowodnij, że jeśli turniej nie zawiera skierowanego trójkąta, to można ustawić jego wierzchołki w takiej kolejności \\( v1, …, vn \\), że jeśli \\( i < j \\) to \\( vi \\to vj \\).
+<p>
+Udowodnij, że jeśli turniej nie zawiera skierowanego trójkąta, to można ustawić jego wierzchołki w takiej kolejności \( v_1, \dots, v_n \), że jeśli \( i < j \), to skierowana krawędź prowadzi od \(v_i\) do \(v_j\).
+</p>
 
 <div data-collapse>
   <h4 class="collapsible">Rozwiązanie</h4>
@@ -40,6 +58,15 @@ Udowodnij, że jeśli turniej nie zawiera skierowanego trójkąta, to można ust
 ---
 
 ### Zadanie 4
+
+<p>
+  <p>
+    Udowodnij, że jeśli \(a\) i \(n\) są dodatnimi liczbami całkowitymi, to \(n \mid \phi(a^n-1)\).
+  </p>
+  <p>
+    WSKAZÓWKA: Rozważ grupę \(\mathbb{Z}^{*}_{a^n-1}\).
+  </p>
+</p>
 
 <div data-collapse>
   <h4 class="collapsible">Rozwiązanie</h4>
