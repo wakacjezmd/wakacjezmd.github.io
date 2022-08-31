@@ -18,7 +18,7 @@ permalink: /2016/egzamin/2/
     Dla ustalonego podziału \(\pi\) liczby \(n\), niech \(A(\pi)\) oznacza liczbę jedynek w \(\pi\), zaś \(B(\pi)\) — liczbę różnych składników w \(\pi\).
   </p>
   <p>
-    PRZYKŁAD: dla podziału \(pi: 1 + 1 + 2 + 2 + 2 + 4\) mamy \(A(\pi)=2\) oraz \(B(\pi)=3\).
+    PRZYKŁAD: dla podziału \(\pi: 1 + 1 + 2 + 2 + 2 + 4\) mamy \(A(\pi)=2\) oraz \(B(\pi)=3\).
   </p>
   <p>
     Udowodnij, że \(\sum_{\pi} A(\pi) = \sum_{\pi} B(\pi)\), gdzie sumowanie odbywa się po wszystkich podział ustalonej liczby \(n\).
