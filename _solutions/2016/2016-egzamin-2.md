@@ -18,7 +18,7 @@ permalink: /2016/egzamin/2/
     Dla ustalonego podziału \(\pi\) liczby \(n\), niech \(A(\pi)\) oznacza liczbę jedynek w \(\pi\), zaś \(B(\pi)\) — liczbę różnych składników w \(\pi\).
   </p>
   <p>
-    PRZYKŁAD: dla podziału \(pi: 1 + 1 + 2 + 2 + 2 + 4\) mamy \(A(\pi)=2\) oraz \(B(\pi)=3\).
+    PRZYKŁAD: dla podziału \(\pi: 1 + 1 + 2 + 2 + 2 + 4\) mamy \(A(\pi)=2\) oraz \(B(\pi)=3\).
   </p>
   <p>
     Udowodnij, że \(\sum_{\pi} A(\pi) = \sum_{\pi} B(\pi)\), gdzie sumowanie odbywa się po wszystkich podział ustalonej liczby \(n\).
@@ -68,16 +68,7 @@ Udowodnij, że jeśli turniej nie zawiera skierowanego trójkąta, to można ust
   </p>
 </p>
 
-<div data-collapse>
-  <h4 class="collapsible">Rozwiązanie</h4>
-  <div class="solution">
-    <p>
-      <a href="https://math.stackexchange.com/a/398227/237591">
-        https://math.stackexchange.com/a/398227/237591
-      </a>
-    </p>
-  </div>
+<div>
+  <h4 class="collapsible"><a href="https://math.stackexchange.com/a/398227/237591">Rozwiązanie (link)</a></h4>
 </div>
-
-
 ---
