@@ -6,15 +6,24 @@ permalink: /2015/egzamin/2/
 ## 2015 Egzamin poprawkowy
 
 ### Zadanie 1
+<p>
+  Znajdź liczbę \(k\)-krotek zbiorów \(\langle S_1, \dots, S_k \rangle\), gdzie \(S_1, \dots, S_k \subseteq \{1, \dots, n\}\)
+  oraz <b>(a)</b> \(S_1 \subseteq S_2 \subseteq \dots \subseteq S_k\); <b> (b) </b> \(\mid S_1 \cap \dots \cap S_k \mid = r\);
+  <b> (c) </b> \(S_1 \subseteq S_2 \supseteq S_3 \subseteq \dots \) (kierunek zawierania na zmianę).
+</p>
 
 ---
 
 ### Zadanie 2
-
+<p>
+   <i> Pagórek </i> z monet to rozmieszczenie jednakowych monet w pewnej liczbie rzędów w taki sposób, że w każdym 
+   rzędzie monety tworzą jeden spójny blok, a każda moneta w każdym rzędzie oprócz najniższego dotyka dokładnie dwóch monet 
+   w rzędzie bezpośrednio poniżej, na przykład <img class="inline-image" src="/images/2015_2.png"> Niech \(a_n\) ozbnacza liczbę pagórków, w którym najniższy rząd zawiera dokładnie \(n\) monet. Znajdź funkcję tworzącą i zwarty wzór na \(a_n\). WSKAZÓWKA: Nietrudno zgadnąć wynik po obliczeniu kilku pierwszych wyrazów ciągu z równania rekurencyjnego.
+</p>
 ---
 
 ### Zadanie 3
-Niech \\(G=(V,E)\\) będzie grafem takim, że \\(E=E\_1 \cup E\_2\\), gdzie graf
+Znajdź Niech \\(G=(V,E)\\) będzie grafem takim, że \\(E=E\_1 \cup E\_2\\), gdzie graf
 \\(G\_1=(V, E\_1)\\) jest planarny, zaś graf \\(G\_2=(V, E\_2)\\) jest lasem.
 Udowodnij, że \\(\chi(G) < 9\\).
 
