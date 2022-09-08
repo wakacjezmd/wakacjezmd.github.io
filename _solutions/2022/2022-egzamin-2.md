@@ -53,7 +53,7 @@ Znajdź \(P'(0)\).
 <div>
 Znajdź liczbę rozwiązań kongruencji
 
-$$ 1 + x + x^2 +x^3 + x^4 + x^5 + x^6 + x^7 + x^8 \equiv 0 \quad (mod\ 133) $$
+$$ 1 + x + x^2 +x^3 + x^4 + x^5 + x^6 + x^7 + x^8 \equiv 0 \pmod{133} $$
 
 w zbiorze \(\{0, 1,\ldots, 132\}\).
 </div>
