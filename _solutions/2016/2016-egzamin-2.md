@@ -10,6 +10,10 @@ permalink: /2016/egzamin/2/
   Oblicz \(\sum_{k=0} ^n \binom{2n+1}{2k+1}2^{3k} \bmod 5\).
 </p>
 
+<div>
+  <h4 class="collapsible"><a href="https://math.stackexchange.com/questions/822230">Rozwiązanie (link)</a></h4>
+</div>
+
 ---
 
 ### Zadanie 2
@@ -41,10 +45,10 @@ Udowodnij, że jeśli turniej nie zawiera skierowanego trójkąta, to można ust
   <h4 class="collapsible">Rozwiązanie</h4>
   <div class="solution">
     <p>
-        Lemat: W turnieju bez trójkątów istnieje wierzchołek v, taki że \( deg_out(v) = 0 \)
+        Lemat: W turnieju bez trójkątów istnieje wierzchołek v, taki że \( deg_{out}(v) = 0 \)
         Dowód:
-        Załóżmy, że wierzchołek o najmniejszym stopniu wyjściowym p spełnia \( deg_out(p) = k (k > 0) \).
-        Każdy wierzchołek \( c \) t. że \( p \to c \) także musi mieć \( deg_out \) co najmniej \( k \), ale istnieje
+        Załóżmy, że wierzchołek o najmniejszym stopniu wyjściowym p spełnia \( deg_{out}(p) = k (k > 0) \).
+        Każdy wierzchołek \( c \) t. że \( p \to c \) także musi mieć \( deg_{out} \) co najmniej \( k \), ale istnieje
         tylko \( k - 1 \) wierzchołków, do których może prowadzić bez utworzenia trójkąta z \(p\), co prowadzi do sprzeczności z założeniem, że \( p \) ma najmniejszy stopień. Zatem \( k \leq 0 \), czyli \( k = 0 \).
 
         Teraz możemy usunąć z turnieju wierzchołek o stopniu wychodzącym 0 i zostanie nam \( n-1 \) - turniej, który też nie zawiera skierowanego trójkąta.
