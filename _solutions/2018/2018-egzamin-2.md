@@ -28,7 +28,7 @@ permalink: /2018/egzamin/2/
 ### Zadanie 3
 
 <div>
-Udowodnij, że jeśli graf planarny ma mniej niż 30 krawędzi, to zawiera wierzchołek stopnia co najwyżej 4.
+Udowodnij, że jeśli graf planarny ma mniej niż \(30\) krawędzi, to zawiera wierzchołek stopnia co najwyżej \(4\).
 </div>
 
 ---
