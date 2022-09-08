@@ -18,7 +18,7 @@ permalink: /2018/egzamin/2/
 ### Zadanie 2
 
 <div>
-<p>Niech \(b_n\) to liczba sposobów ustawienia n różnych książek na dwóch rozróżnialnych półkach (górnej i dolnej), tak że na każdej półce musi stać co najmniej jedna książka.</p>
+<p>Niech \(b_n\) to liczba sposobów ustawienia \(n\) różnych książek na dwóch rozróżnialnych półkach (górnej i dolnej) tak, że na każdej półce musi stać co najmniej jedna książka.</p>
 
 <p>Znaleźć wykładniczą funkcję tworzącą i zwarty wzór na \(b_n\).</p>
 </div>
