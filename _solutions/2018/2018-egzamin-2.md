@@ -36,7 +36,7 @@ Udowodnij, że jeśli graf planarny ma mniej niż \(30\) krawędzi, to zawiera w
 ### Zadanie 4
 
 <div>
-Policz na ile sposobów można utworzyć kwadrat 3x3 składający się z poniższych płytek 1x1.
+Policz na ile sposobów można utworzyć kwadrat \(3 \times 3\) składający się z poniższych płytek \(1 \times \).
 
 <p style="margin-top: 20px; margin-bottom: 20px">
 <img src="/images/2018_egz2_zad4.svg" alt="Two 1x1 tiles: first one filled with one isosceles triangle with base on the right edge, second one with two triangles with bases on the right and left edge"  style="display:block; margin-left:auto; margin-right:auto">
