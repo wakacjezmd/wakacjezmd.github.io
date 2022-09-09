@@ -51,7 +51,7 @@ Udowodnij, że jeśli turniej nie zawiera skierowanego trójkąta, to można ust
         Każdy wierzchołek \( c \) t. że \( p \to c \) także musi mieć \( deg_{out} \) co najmniej \( k \), ale istnieje
         tylko \( k - 1 \) wierzchołków, do których może prowadzić bez utworzenia trójkąta z \(p\), co prowadzi do sprzeczności z założeniem, że \( p \) ma najmniejszy stopień. Zatem \( k \leq 0 \), czyli \( k = 0 \).
 
-        Teraz możemy usunąć z turnieju wierzchołek o stopniu wychodzącym 0 i zostanie nam \( n-1 \) - turniej, który też nie zawiera skierowanego trójkąta.
+        Teraz możemy usunąć z turnieju wierzchołek o stopniu wychodzącym \(0\) i zostanie nam \( n-1 \) - turniej, który też nie zawiera skierowanego trójkąta.
         Usuwając z \( k \) -turnieju taki wierzchołek oznaczamy go jako \( v_k \) i w oryginalnym turnieju spełni on warunek danej nam kolejności,
         ponieważ istniała krawędź od niego do wszystkich usuniętych przed nim wierzchołków.
     </p>
