@@ -47,7 +47,7 @@ Udowodnij, że jeśli turniej nie zawiera skierowanego trójkąta, to można ust
     <p>
         Lemat: W turnieju bez trójkątów istnieje wierzchołek \(v\), taki że \( deg_{out}(v) = 0 \)
         Dowód:
-        Załóżmy, że wierzchołek o najmniejszym stopniu wyjściowym p spełnia \( deg_{out}(p) = k (k > 0) \).
+        Załóżmy, że wierzchołek o najmniejszym stopniu wyjściowym \(p\) spełnia \( deg_{out}(p) = k (k > 0) \).
         Każdy wierzchołek \( c \) t. że \( p \to c \) także musi mieć \( deg_{out} \) co najmniej \( k \), ale istnieje
         tylko \( k - 1 \) wierzchołków, do których może prowadzić bez utworzenia trójkąta z \(p\), co prowadzi do sprzeczności z założeniem, że \( p \) ma najmniejszy stopień. Zatem \( k \leq 0 \), czyli \( k = 0 \).
 
