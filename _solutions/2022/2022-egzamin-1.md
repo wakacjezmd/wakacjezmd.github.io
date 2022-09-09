@@ -73,6 +73,10 @@ Udowodnij, że dokładnie połowa spośród podziałów binarnych \(n \geq 2\) m
 
 </div>
 
+<div>
+  <h4 class="collapsible"><a href="https://math.stackexchange.com/questions/81041">Rozwiązanie (link)</a></h4>
+</div>
+
 ### Zadanie 3
 
 <div>
