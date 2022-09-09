@@ -15,6 +15,10 @@ hamiltonowsko-spójny, to \(|E(G)| \geq \lfloor (3|V(G)| + 1)/2 \rfloor\).
 
 </div>
 
+<div>
+  <h4 class="collapsible"><a href="https://math.stackexchange.com/questions/2993518">Rozwiązanie (link)</a></h4>
+</div>
+
 ### Zadanie 2
 
 <div>
@@ -31,6 +35,10 @@ go rozspójnia, nazwiemy <em>ciekawym</em>.
 mają taki sam kolor.
 </p>
 
+</div>
+
+<div>
+  <h4 class="collapsible"><a href="https://math.stackexchange.com/questions/4429828">Rozwiązanie (link)</a></h4>
 </div>
 
 ### Zadanie 3
