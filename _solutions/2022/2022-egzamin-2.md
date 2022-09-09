@@ -32,6 +32,64 @@ podzbiorów liniowo uporządkowanych (np. \( L(3, 2) = 6: \{1, 23\}, \{1, 32\}, 
 </ol>
 </div>
 
+<div data-collapse>
+  <h4 class="collapsible">Rozwiązanie</h4>
+  <div class="solution">
+    <ol type="a">
+      <li>
+        <p>
+          <em>Prawa strona:</em> Cykle \( n \) permutacji rozmieszczamy w \( k \) blokach.
+          Takie rozmieszczenie możemy zakodować, zapisując każdy cykl począwszy od największego
+          elementu i  ustawiając cykle w każdym bloku w rosnącej kolejności początkowych 
+          elementów. W ten sposób otrzymujemy zbiór \( k \) niepustych list
+          zawierających łącznie \( n \) elementów.
+        </p>
+        <p>
+          <em>Lewa strona:</em> Tak samo jak w treści zadania, każdy podział można przedstawić jako zbiór \( k \) niepustych list
+          zawierających łącznie \( n \) elementów.
+        </p>
+        <p>
+          Stosując się do wyżej wymienionych zasad zapisu każdy taki zapis możemy zamienić na podział na bloki i cykle i na odwrót. Powielając przykład z treści zadania:
+          <ul>
+            <li>
+              \( \{1, 23\} = [(1)],[(2)(3)] \) 
+            </li>
+            <li>
+              \( \{1, 32\} = [(1)],[(32)] \) 
+            </li>
+            <li>
+              \( \{2, 13\} = [(2)],[(1)(3)] \) 
+            </li>
+            <li>
+              \( \{2, 31\} = [(2)],[(31)] \) 
+            </li>
+            <li>
+              \( \{3, 12\} = [(3)],[(1)(2)] \) 
+            </li>
+            <li>
+              \( \{3, 21\} = [(3)],[(21)] \) 
+            </li>
+          </ul>
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Lewa strona:</em> Robimy tak samo jak w podpunkcie a, tylko, że tym razem
+          ustawiamy bloki w kolejności rosnącej początkowych elementów początkowych cyklów.
+          W ten sposób otrzymujemy listę \( k \) niepustych list
+          zawierających łącznie \( n \) elementów, posortowaną względem początkowych elementów tych list.
+        </p>
+        <p>
+          <em>Prawa strona:</em> Permutujemy \( n \) elementów, wyróżniamy pierwszą pozycję oraz
+          \( k - 1 \) spośród \( n - 1 \) pozostałych. Wyróżnione elementy odpowiadają
+          początkom list. Następnie zaniedbujemy kolejność list ustawiając je w rosnącej
+          kolejności początkowych elementów. Można to zrobić na \( {n-1\choose k-1}\frac{n!}{k!} \) sposobów.
+        </p>
+      </li>
+    </ol>
+  </div>
+</div>
+
 ---
 
 ### Zadanie 3
