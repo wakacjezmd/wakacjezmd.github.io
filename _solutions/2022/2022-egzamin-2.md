@@ -13,6 +13,63 @@ Uprość sumę
 $$ \sum^{n}_{k=0} {\binom{\binom{k}{2}}{2}} $$
 </div>
 
+<div data-collapse>
+  <h4 class="collapsible">Rozwiązanie</h4>
+  <div class="solution">
+    <p>
+      Zauważmy, że
+    </p>
+    <p>
+      $$\binom{\binom{k}{2}}{2}
+      = \binom{\frac{k(k-1)}{2}}{2}
+      = \frac{1}{2}\frac{k(k-1)}{2}\frac{(k+1)(k-2)}{2}
+      = \frac{4!}{8}\frac{(k+1)k(k-1)(k-2)}{4!}
+      = 3 \binom{k+1}{4}$$.
+    </p>
+    <p>
+      Korzystając ze wzoru Pascala otrzymujemy
+    </p>
+    <p>
+      $$3\binom{k+1}{4} = 3\binom{k}{4} + 3\binom{k}{3}$$.
+    </p>
+    <p>
+      Zadanie więc sprowadza się do policzenia sumy
+    </p>
+    <p>
+      $$\sum_{k=0}^{n}\binom{\binom{k}{2}}{2} = 3\sum_{k=0}^{n}\binom{k}{4} + 3\sum_{k=0}^{n}\binom{k}{3}$$.
+    </p>
+    <p>
+      W ogólności zastanówmy się jak policzyć sumę \(\sum_{k=0}^{n}\binom{k}{l} \).
+      Posłużmy się interpretacją kombinatoryczną. 
+      Wiadomo (z ćwiczeń), że \( \binom{n-1}{l-1} \) to liczba rozwiązań
+      (w liczbach całkowitych dodatnich) równania \( x_1 + x_2 + ... + x_l = n \).
+      Zatem szukana suma to liczba rozwiązań nierówności
+      \( x_1 + x_2 + ... + x_{l + 1} \leq n+1\), gdzie \( k \), po którym sumujemy
+      spełnia \( k + 1 = x_1 + x_2 + ... + x_{l + 1}\).
+    </p>
+    <p>
+      Zastanówmy się jak inaczej przedstawić liczbę rozwiązań
+      (w liczbach całkowitych dodatnich) takiej nierówności. Weźmy sobie \( n+1 \) kulek.
+      Ustawiamy kulki w rzędzie i każda po prawej ma jedno puste miejsce.
+      Tych miejsc jest oczywiście tyle co kulek, czyli \( n+1 \). W te \( n+1 \) pustych
+      miejsc wstawiamy \( l + 1 \) patyków. Ilość kulek na lewo od pierwszego patyka
+      to \( x_1\), ilość kulek między pierwszym, a drugim patykiem to \( x_2 \) itd.
+      aż do \(l+1\) patyka. Takie rozwiązanie spełnia nierówność.
+      Zatem liczba rozwiązań tej nierówności
+      to \(\sum_{k=0}^{n}\binom{k}{l} = \binom{n+1}{l+1} \).
+    </p>
+    <p>
+      Mając policzoną tę sumę możemy napisać ostateczne rozwiązanie
+    </p>
+    <p>
+      $$\sum_{k=0}^{n}\binom{\binom{k}{2}}{2} = 3\binom{k+1}{5} + 3\binom{k+1}{4}$$.
+    </p>
+
+
+
+  </div>
+</div>
+
 ---
 
 ### Zadanie 2
