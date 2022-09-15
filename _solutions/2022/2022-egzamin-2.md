@@ -62,7 +62,7 @@ $$ \sum^{n}_{k=0} {\binom{\binom{k}{2}}{2}} $$
       Mając policzoną tę sumę możemy napisać ostateczne rozwiązanie
     </p>
     <p>
-      $$\sum_{k=0}^{n}\binom{\binom{k}{2}}{2} = 3\binom{k+1}{5} + 3\binom{k+1}{4}$$.
+      $$\sum_{k=0}^{n}\binom{\binom{k}{2}}{2} = 3\binom{n+1}{5} + 3\binom{n+1}{4}$$.
     </p>
 
 
