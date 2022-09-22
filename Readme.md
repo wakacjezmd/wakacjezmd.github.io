@@ -37,10 +37,16 @@ We wszystkich plikach można używać LaTeXa. Wzory inline należy umieszczać
 w nawiasach `\(<wzór>\)`, a wzory mające być wyświetlane w oddzielnych liniach
 w znacznikach `$$<wzór>$$`.
 
-#### Przydatne wzory
+#### Przydatne wzory i częste błędy
 
 * liczby Stirlinga I rodzaju `{ n\brack m }`
 * liczby Stirlinga II rodzaju `{ n\brace m }`
+* używamy \bmod n albo \pmod{n}, nie \mod n albo mod n
+* używamy \dots zamiast ...
+* używamy \mid zamiast |
+* używamy \times zamiast x
+* każda liczba i zmienna powinna być zapisana w LaTeXu.
+  Zamiast "n musi być większe od 3", powinno być "\(n\) musi być większe od \(3\)"
 
 #### UWAGA
 
@@ -92,6 +98,17 @@ Markdown każdego zadania powinien mieć następującą strukturę:
 ---
 ```
 
+Można dodawać rozwiązania do zadań, które mają już rozwiązanie - nawet do tego zachęcamy. Oczywiście rozwiązania muszą być wzajemnie różne.
+W przypadku zadań z więcej niż jednym rozwiązaniem warto je ponumerować i/lub dodać krótki opis, na przykład: Rozwiązanie I (algebraiczne), Rozwiązanie II (interpretacja).
+
+Można dodawać rozwiązania w postaci linku do stacka - w takiej sytuacji pole ma wyglądać tak: 
+
+```md
+<div>
+  <h4 class="collapsible"><a href="link">Rozwiązanie (link)</a></h4>
+</div>
+```
+
 #### Nowy egzamin
 
 Po dodaniu nowego pliku egzaminu należy dodać odpowiednie linki w `index.html`.
@@ -100,5 +117,3 @@ Po dodaniu nowego pliku egzaminu należy dodać odpowiednie linki w `index.html`
 [jekyll]: http://jekyllrb.com
 [Matematyki, Informatyki i Mechaniki UW]: http://www.mimuw.edu.pl
 [wakacjezmd.github.io]: http://wakacjezmd.github.io
-
-
