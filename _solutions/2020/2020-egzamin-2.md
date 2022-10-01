@@ -251,3 +251,5 @@ Znajdź liczbę uporządkowanych par liczb naturalnych \\(\langle a,b \rangle\\)
     </p>
   </div>
 </div>
+
+---
