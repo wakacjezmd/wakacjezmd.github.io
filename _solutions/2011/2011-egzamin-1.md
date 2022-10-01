@@ -61,6 +61,8 @@ $$
   </div>
 </div>
 
+---
+
 ### Zadanie 2
 
 Znajdź największą potęgę dwójki, która dzieli \\(3^{2^k} -1\\).
@@ -76,6 +78,8 @@ Znajdź największą potęgę dwójki, która dzieli \\(3^{2^k} -1\\).
   </p>
   </div>
 </div>
+
+---
 
 ### Zadanie 3
 
@@ -146,3 +150,5 @@ obrocie czworościanu w \\(\Bbb{R}^3 \\).
     </p>
   </div>
 </div>
+
+---
