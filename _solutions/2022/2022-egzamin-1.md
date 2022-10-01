@@ -107,9 +107,9 @@ Udowodnij, że funkcja \(f: \mathbb{N}_{+} \rightarrow \mathbb{N}_{+}\) określo
 
 <div>
 
-Pomalowanie krawędzi sześcianu na czerwono kosztuje 1 zł, a na zielono 2 zł. Pomalowanie ściany na czerwono kosztuje
-3 zł, a na zielono 5 zł. Na ile istotnie różnych sposóbów można pomalować wszystkie ściany i krawędzie sześcianu tak,
-żeby łączny koszt wyniósł dokładnie 50 zł? (Dwa sposoby pomalowania utożsamiamy, jeśli jeden przechodzi na drugi przy
+Pomalowanie krawędzi sześcianu na czerwono kosztuje \(1\) zł, a na zielono \(2\) zł. Pomalowanie ściany na czerwono kosztuje
+\(3\) zł, a na zielono \(5\) zł. Na ile istotnie różnych sposóbów można pomalować wszystkie ściany i krawędzie sześcianu tak,
+żeby łączny koszt wyniósł dokładnie \(50\) zł? (Dwa sposoby pomalowania utożsamiamy, jeśli jeden przechodzi na drugi przy
 pewnym obrocie sześcianu w \( \mathbb{R}^3 \)).
 
 </div>
