@@ -86,3 +86,5 @@ tylko wtedy, gdy:
     4(n-1)! + 4 + n \equiv 0 \mod n(n+2)
 \]
 </div>
+
+---

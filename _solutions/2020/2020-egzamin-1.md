@@ -103,6 +103,8 @@ liczbę spacerów złożonych z \(n\) kroków, które zaczynają się i kończą
   </div>
 </div>
 
+---
+
 ### Zadanie 2
 
 <div>
@@ -178,6 +180,8 @@ Udowodnij, że \((\prod_{x \in X_n} x) \equiv 1 \bmod n\).
   </div>
 </div>
 
+---
+
 ### Zadanie 4
 
 
@@ -193,3 +197,5 @@ przez pewien obrót lub symetrię osiową.
 kalkulacyjny.
 </p>
 </div>
+
+---

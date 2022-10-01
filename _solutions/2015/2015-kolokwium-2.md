@@ -16,8 +16,8 @@ dla \\(n\ge 3 \\) gdzie \\(e\in E(K\_n)\\) jest pewną ustaloną krawędzią.
 ---
 
 ### Zadanie 2
-Udowodnij że jeśli \\(G\\) jest grafem 100-wierzchołkowym, w którym 90
-wierzchołków ma stopień nie większy niż 9, to \\(\chi(G)\le 10 \\).
+Udowodnij że jeśli \\(G\\) jest grafem \\(100\\)-wierzchołkowym, w którym \\(90\\)
+wierzchołków ma stopień nie większy niż \\(9\\), to \\(\chi(G)\le 10 \\).
 
 ---
 

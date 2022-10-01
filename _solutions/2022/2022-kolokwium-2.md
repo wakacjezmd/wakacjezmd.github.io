@@ -19,6 +19,8 @@ hamiltonowsko-spójny, to \(|E(G)| \geq \lfloor (3|V(G)| + 1)/2 \rfloor\).
   <h4 class="collapsible"><a href="https://math.stackexchange.com/questions/2993518">Rozwiązanie (link)</a></h4>
 </div>
 
+---
+
 ### Zadanie 2
 
 <div>
@@ -41,6 +43,8 @@ mają taki sam kolor.
   <h4 class="collapsible"><a href="https://math.stackexchange.com/questions/4429828">Rozwiązanie (link)</a></h4>
 </div>
 
+---
+
 ### Zadanie 3
 
 <div>
@@ -49,3 +53,5 @@ Znajdź liczbę rozwiązań kongruencji \( x^2 - x \equiv 31\) (mod 3025) w zbio
 jedno z nich.
 
 </div>
+
+---

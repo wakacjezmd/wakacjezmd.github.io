@@ -259,3 +259,5 @@ jeśli utożsamimy takie rozmieszczenia, że jedno przechodzi na drugie:
     </ol>
   </div>
 </div>
+
+---
