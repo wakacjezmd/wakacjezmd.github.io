@@ -41,12 +41,12 @@ w znacznikach `$$<wzór>$$`.
 
 * liczby Stirlinga I rodzaju `{ n\brack m }`
 * liczby Stirlinga II rodzaju `{ n\brace m }`
-* używamy \bmod n albo \pmod{n}, nie \mod n albo mod n
-* używamy \dots zamiast ...
-* używamy \mid zamiast |
-* używamy \times zamiast x
+* używamy `bmod n` albo `\pmod{n}`, nie `\mod n` albo `mod n`
+* używamy `\dots` zamiast `...`
+* używamy `\mid` zamiast `|`
+* używamy `\times` zamiast `x`
 * każda liczba i zmienna powinna być zapisana w LaTeXu.
-  Zamiast "n musi być większe od 3", powinno być "\\(n\\) musi być większe od \\(3\\)"
+  Zamiast `n musi być większe od 3`, powinno być `\(n\) musi być większe od \(3\)`
 
 #### UWAGA
 
