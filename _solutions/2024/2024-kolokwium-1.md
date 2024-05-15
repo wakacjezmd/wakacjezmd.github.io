@@ -37,7 +37,7 @@ Niech \( K \) będzie kwadratową planszą \( \left(2n - 1 \right) \times \left(
   <h4 class="collapsible">Rozwiązanie 2</h4>
   <div class="solution">
     <p>
-        Zauważmy, że suma pól prostokątów zawierających wyróżnione pole jest równa sumie pól wszystkich prostokątów minus sumie pól prostokątów które nie zawierają tego pola. Oznaczmy jako  \( A_{n \times m} \) sumę pól prostokątów złożonych z kwadratów jednostkowych w prostokącie wielkości  \( n \times m \). Aby wyznaczyć tą wartość policzmy w ilu prostokątach zawarte jest wyróżnione pole o współrzędnych  \(i , j \). Zawarte jest ono zawsze jeżeli lewy górny róg znajduje się w lewo i w górę od tego pola, analogicznie prawy dolny w prawo i w dół. Czyli w  \( ij(n-i+1)(m-j+1)\) prostokątach.
+        Zauważmy, że suma pól prostokątów zawierających wyróżnione pole jest równa sumie pól wszystkich prostokątów minus sumie pól prostokątów, które nie zawierają tego pola. Oznaczmy jako  \( A_{n \times m} \) sumę pól prostokątów złożonych z kwadratów jednostkowych w prostokącie wielkości  \( n \times m \). Aby wyznaczyć tą wartość policzmy w ilu prostokątach zawarte jest wyróżnione pole o współrzędnych  \(i , j \). Zawarte jest ono zawsze, jeżeli lewy górny róg znajduje się w lewo i w górę od tego pola, analogicznie prawy dolny w prawo i w dół. Czyli w  \( ij(n-i+1)(m-j+1)\) prostokątach.
         </p>
         <p> A zatem 
         $$
