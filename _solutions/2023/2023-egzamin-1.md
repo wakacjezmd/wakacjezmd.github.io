@@ -25,7 +25,7 @@ Niech \( r_n \) oznacza liczbę podziałów \( n \) na różne składniki. Udow
 $$
 \sum_{i=0}^n (-1)^i r_i r_{n-i}
 $$
-to liczba podziałów n na różne składniki parzyste.
+to liczba podziałów \( n \) na różne składniki parzyste.
 </div>
 
 ---
