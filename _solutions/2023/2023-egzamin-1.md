@@ -48,4 +48,8 @@ Malujemy wierzchołki kwadratu na pięć kolorów: Akwamaryna, Biały, Czerwony,
 są dla nas jednakowe, ale różne od \( \begin{matrix} B & A \\ C & A \end{matrix}\). Znajdź liczbę istotnie różnych sposobów pomalowania kwadratu.
 </div>
 
+<div>
+  <h4 class="collapsible"><a href="https://math.stackexchange.com/questions/4745718">Rozwiązanie (link)</a></h4>
+</div>
+
 ---
