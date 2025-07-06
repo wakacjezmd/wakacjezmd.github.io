@@ -1,0 +1,22 @@
+<svg height="1066" width="1200" xmlns="http://www.w3.org/2000/svg">
+  <polygon style="fill:none;stroke:black;stroke-width:5"
+    points="
+      100,100
+      1100,100
+      600,966"/>
+  <polygon style="fill:none;stroke:black;stroke-width:5"
+    points="
+      100,100
+      600,100
+      350,533"/>
+  <polygon style="fill:none;stroke:black;stroke-width:5"
+    points="
+      350,533
+      850,533
+      600,966"/>
+  <polygon style="fill:none;stroke:black;stroke-width:5"
+    points="
+      600,100
+      1100,100
+      850,533"/>
+</svg>
